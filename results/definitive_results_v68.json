@@ -1,0 +1,687 @@
+{
+  "version": "v6.8_final_fixed",
+  "bug_fixes": [
+    "BUG1_CRITICAL: Validation now uses mixed base+high conditions (prevents ep800 shortcut)",
+    "BUG4: Cohen's d verified acceptable (negative correlation in paired design)",
+    "All Category A fixes retained from previous run"
+  ],
+  "training": {
+    "total_episodes": 2000,
+    "best_checkpoint_ep": 2000,
+    "best_val_sl": 97.877,
+    "final_val_sl": 97.877,
+    "checkpoint_gain_pp": -0.0,
+    "epsilon_decay": 0.9936,
+    "epsilon_min_at_ep": 467,
+    "q_table_shape": [
+      8,
+      7,
+      4,
+      2,
+      3,
+      8
+    ],
+    "state_space": "(inv_bin[8], dem_bin[7], pend_bin[4], dis_flag[2], demand_rate_bin[3])",
+    "validation_conditions": "mixed: base (\u03bb=15) + high (\u03bb=25) conditions, 15 seeds total",
+    "policy": "best checkpoint by held-out validation SL (mixed base+high conditions)"
+  },
+  "q_table_coverage": {
+    "total_states": 1344,
+    "visited": 644,
+    "unvisited": 700,
+    "visited_pct": 47.9,
+    "fallback_pct": 0.0
+  },
+  "conditions": {
+    "C1_base_poisson": {
+      "baseline_sl": 86.06,
+      "baseline_sl_std": 2.81,
+      "agentic_sl": 99.35,
+      "agentic_sl_std": 1.01,
+      "delta_sl": 13.28,
+      "cohens_d": 5.09,
+      "p_value": 1.862645149230957e-09,
+      "wins": 30,
+      "n_runs": 30,
+      "baseline_profit": -124368.0,
+      "agentic_profit": 53035.0,
+      "delta_profit": 177403.0,
+      "baseline_co2": 702.0,
+      "agentic_co2": 1227.0,
+      "delta_co2_pct": 74.7,
+      "inventory_value_direction": "trade-off"
+    },
+    "C2_high_poisson": {
+      "baseline_sl": 51.92,
+      "baseline_sl_std": 3.89,
+      "agentic_sl": 96.05,
+      "agentic_sl_std": 2.48,
+      "delta_sl": 44.14,
+      "cohens_d": 10.27,
+      "p_value": 1.862645149230957e-09,
+      "wins": 30,
+      "n_runs": 30,
+      "baseline_profit": -1147329.0,
+      "agentic_profit": 51872.0,
+      "delta_profit": 1199202.0,
+      "baseline_co2": 703.0,
+      "agentic_co2": 1953.0,
+      "delta_co2_pct": 177.8,
+      "inventory_value_direction": "trade-off"
+    },
+    "C3_base_negbin": {
+      "baseline_sl": 83.59,
+      "baseline_sl_std": 3.08,
+      "agentic_sl": 99.26,
+      "agentic_sl_std": 0.84,
+      "delta_sl": 15.67,
+      "cohens_d": 4.73,
+      "p_value": 1.862645149230957e-09,
+      "wins": 30,
+      "n_runs": 30,
+      "baseline_profit": -167193.0,
+      "agentic_profit": 53652.0,
+      "delta_profit": 220844.0,
+      "baseline_co2": 680.0,
+      "agentic_co2": 1196.0,
+      "delta_co2_pct": 75.8,
+      "inventory_value_direction": "trade-off"
+    },
+    "C4_high_negbin": {
+      "baseline_sl": 51.2,
+      "baseline_sl_std": 3.21,
+      "agentic_sl": 94.99,
+      "agentic_sl_std": 3.11,
+      "delta_sl": 43.79,
+      "cohens_d": 12.92,
+      "p_value": 1.862645149230957e-09,
+      "wins": 30,
+      "n_runs": 30,
+      "baseline_profit": -1173762.0,
+      "agentic_profit": 15482.0,
+      "delta_profit": 1189244.0,
+      "baseline_co2": 698.0,
+      "agentic_co2": 2068.0,
+      "delta_co2_pct": 196.2,
+      "inventory_value_direction": "trade-off"
+    }
+  },
+  "sS_baseline": {
+    "C1_base_poisson": {
+      "rop_sl": 86.06,
+      "sS_sl": 92.29,
+      "sS_s": 90,
+      "sS_S": 190,
+      "agentic_sl": 99.35,
+      "delta_vs_sS": 7.06,
+      "cohens_d_vs_sS": 2.84,
+      "p_value_vs_sS": 1.862645149230957e-09,
+      "wins_vs_sS": 30
+    },
+    "C2_high_poisson": {
+      "rop_sl": 51.92,
+      "sS_sl": 86.46,
+      "sS_s": 175,
+      "sS_S": 325,
+      "agentic_sl": 96.05,
+      "delta_vs_sS": 9.59,
+      "cohens_d_vs_sS": 2.45,
+      "p_value_vs_sS": 1.862645149230957e-09,
+      "wins_vs_sS": 30
+    },
+    "C3_base_negbin": {
+      "rop_sl": 83.59,
+      "sS_sl": 94.69,
+      "sS_s": 110,
+      "sS_S": 210,
+      "agentic_sl": 99.26,
+      "delta_vs_sS": 4.57,
+      "cohens_d_vs_sS": 2.55,
+      "p_value_vs_sS": 1.862645149230957e-09,
+      "wins_vs_sS": 30
+    },
+    "C4_high_negbin": {
+      "rop_sl": 51.2,
+      "sS_sl": 89.08,
+      "sS_s": 195,
+      "sS_S": 345,
+      "agentic_sl": 94.99,
+      "delta_vs_sS": 5.91,
+      "cohens_d_vs_sS": 1.65,
+      "p_value_vs_sS": 9.313225746154785e-09,
+      "wins_vs_sS": 28
+    }
+  },
+  "ablation": {
+    "Full Agentic (all agents active)": {
+      "sl_mean": 99.36,
+      "sl_std": 0.96,
+      "n_runs": 30,
+      "marginal_contribution_pp": 0.0
+    },
+    "Ablate Forecaster (-> 7d MA)": {
+      "sl_mean": 99.4,
+      "sl_std": 0.92,
+      "n_runs": 30,
+      "marginal_contribution_pp": 0.04
+    },
+    "Ablate Inventory (-> ROP heuristic)": {
+      "sl_mean": 96.32,
+      "sl_std": 1.73,
+      "n_runs": 30,
+      "marginal_contribution_pp": -3.04
+    },
+    "Ablate Logistics (-> fixed Standard)": {
+      "sl_mean": 99.36,
+      "sl_std": 0.96,
+      "n_runs": 30,
+      "marginal_contribution_pp": 0.0
+    },
+    "Ablate Production (-> FIFO)": {
+      "sl_mean": 99.36,
+      "sl_std": 0.96,
+      "n_runs": 30,
+      "marginal_contribution_pp": 0.0
+    }
+  },
+  "ablation_extended": {
+    "Full Agentic (all agents active)": {
+      "sl_mean": 99.36,
+      "sl_std": 0.96,
+      "cost_mean": 157448.0,
+      "carbon_mean": 1223.6,
+      "shipping_mean": 56202.0,
+      "n_runs": 30,
+      "marginal_sl_pp": 0.0,
+      "marginal_cost_gbp": 0.0,
+      "marginal_carbon_kg": 0.0,
+      "marginal_ship_gbp": 0.0
+    },
+    "Ablate Forecaster (-> 7d MA)": {
+      "sl_mean": 99.4,
+      "sl_std": 0.92,
+      "cost_mean": 164478.0,
+      "carbon_mean": 1250.8,
+      "shipping_mean": 58382.0,
+      "n_runs": 30,
+      "marginal_sl_pp": 0.04,
+      "marginal_cost_gbp": -7030.0,
+      "marginal_carbon_kg": -27.2,
+      "marginal_ship_gbp": -2180.0
+    },
+    "Ablate Inventory (-> ROP heuristic)": {
+      "sl_mean": 96.32,
+      "sl_std": 1.73,
+      "cost_mean": 220674.0,
+      "carbon_mean": 1073.0,
+      "shipping_mean": 42387.0,
+      "n_runs": 30,
+      "marginal_sl_pp": -3.04,
+      "marginal_cost_gbp": -63226.0,
+      "marginal_carbon_kg": 150.6,
+      "marginal_ship_gbp": 13815.0
+    },
+    "Ablate Logistics (-> fixed Standard)": {
+      "sl_mean": 99.36,
+      "sl_std": 0.96,
+      "cost_mean": 154407.0,
+      "carbon_mean": 996.8,
+      "shipping_mean": 53160.0,
+      "n_runs": 30,
+      "marginal_sl_pp": 0.0,
+      "marginal_cost_gbp": 3041.0,
+      "marginal_carbon_kg": 226.8,
+      "marginal_ship_gbp": 3042.0
+    },
+    "Ablate Production (-> FIFO)": {
+      "sl_mean": 99.36,
+      "sl_std": 0.96,
+      "cost_mean": 160489.0,
+      "carbon_mean": 1223.6,
+      "shipping_mean": 56202.0,
+      "n_runs": 30,
+      "marginal_sl_pp": 0.0,
+      "marginal_cost_gbp": -3041.0,
+      "marginal_carbon_kg": 0.0,
+      "marginal_ship_gbp": 0.0
+    }
+  },
+  "demand_rate_bin_ablation": {
+    "6": {
+      "lambda": 6,
+      "with_sl": 97.46,
+      "without_sl": 99.11,
+      "delta_pp": -1.65,
+      "p_value": 0.001689910888671875,
+      "n_runs": 20
+    },
+    "8": {
+      "lambda": 8,
+      "with_sl": 96.51,
+      "without_sl": 93.88,
+      "delta_pp": 2.63,
+      "p_value": 6.29425048828125e-05,
+      "n_runs": 20
+    },
+    "10": {
+      "lambda": 10,
+      "with_sl": 95.25,
+      "without_sl": 87.3,
+      "delta_pp": 7.96,
+      "p_value": 1.9073486328125e-06,
+      "n_runs": 20
+    },
+    "15": {
+      "lambda": 15,
+      "with_sl": 99.38,
+      "without_sl": 99.32,
+      "delta_pp": 0.06,
+      "p_value": 0.39806292572561963,
+      "n_runs": 20
+    },
+    "25": {
+      "lambda": 25,
+      "with_sl": 97.49,
+      "without_sl": 68.09,
+      "delta_pp": 29.4,
+      "p_value": 1.9073486328125e-06,
+      "n_runs": 20
+    }
+  },
+  "checkpoint_ablation": {
+    "best_checkpoint_ep": 2000,
+    "best_val_sl_pct": 97.877,
+    "final_policy_val_sl_pct": 97.877,
+    "gain_pp": -0.0
+  },
+  "profit_sensitivity": {
+    "0.5": {
+      "c1_delta": 51381.0,
+      "c2_delta": 284357.0
+    },
+    "1.0": {
+      "c1_delta": 102763.0,
+      "c2_delta": 568714.0
+    },
+    "1.5": {
+      "c1_delta": 154144.0,
+      "c2_delta": 853071.0
+    },
+    "2.0": {
+      "c1_delta": 205526.0,
+      "c2_delta": 1137428.0
+    },
+    "3.0": {
+      "c1_delta": 308288.0,
+      "c2_delta": 1706141.0
+    }
+  },
+  "ood": {
+    "OOD_Low  (lambda=4.2, below training)": {
+      "lambda": 4,
+      "in_training_range": false,
+      "baseline_sl_mean": 100.0,
+      "baseline_sl_std": 0.0,
+      "agentic_sl_mean": 99.8,
+      "agentic_sl_std": 0.38,
+      "delta_sl_pp": -0.2,
+      "cohens_d": -0.53,
+      "p_value": 0.017960477526078766,
+      "wins": 0,
+      "n_runs": 20,
+      "bonferroni_significant": false
+    },
+    "OOD_High (lambda=28.6, above training)": {
+      "lambda": 29,
+      "in_training_range": false,
+      "baseline_sl_mean": 53.07,
+      "baseline_sl_std": 1.83,
+      "agentic_sl_mean": 80.97,
+      "agentic_sl_std": 4.42,
+      "delta_sl_pp": 27.9,
+      "cohens_d": 5.6,
+      "p_value": 1.9073486328125e-06,
+      "wins": 20,
+      "n_runs": 20,
+      "bonferroni_significant": true
+    }
+  },
+  "validation_sl_history": [
+    {
+      "ep": 100,
+      "val_sl": 0.02401
+    },
+    {
+      "ep": 200,
+      "val_sl": 0.545
+    },
+    {
+      "ep": 300,
+      "val_sl": 0.71356
+    },
+    {
+      "ep": 400,
+      "val_sl": 0.87977
+    },
+    {
+      "ep": 500,
+      "val_sl": 0.95923
+    },
+    {
+      "ep": 600,
+      "val_sl": 0.93586
+    },
+    {
+      "ep": 700,
+      "val_sl": 0.95925
+    },
+    {
+      "ep": 800,
+      "val_sl": 0.9678
+    },
+    {
+      "ep": 900,
+      "val_sl": 0.97028
+    },
+    {
+      "ep": 1000,
+      "val_sl": 0.95543
+    },
+    {
+      "ep": 1100,
+      "val_sl": 0.97285
+    },
+    {
+      "ep": 1200,
+      "val_sl": 0.96564
+    },
+    {
+      "ep": 1300,
+      "val_sl": 0.97193
+    },
+    {
+      "ep": 1400,
+      "val_sl": 0.95853
+    },
+    {
+      "ep": 1500,
+      "val_sl": 0.97263
+    },
+    {
+      "ep": 1600,
+      "val_sl": 0.93553
+    },
+    {
+      "ep": 1700,
+      "val_sl": 0.96507
+    },
+    {
+      "ep": 1800,
+      "val_sl": 0.97261
+    },
+    {
+      "ep": 1900,
+      "val_sl": 0.96787
+    },
+    {
+      "ep": 2000,
+      "val_sl": 0.97877
+    }
+  ],
+  "training_stability": {
+    "n_seeds": 5,
+    "val_sl_mean": 98.81,
+    "val_sl_std": 0.56,
+    "eval_sl_mean": 99.46,
+    "eval_sl_std": 0.15,
+    "min_val_sl": 97.94,
+    "max_val_sl": 99.29,
+    "per_seed": [
+      {
+        "seed_offset": 0,
+        "best_val_sl": 99.144,
+        "best_checkpoint": 800,
+        "eval_sl_mean": 99.19,
+        "eval_sl_std": 0.64
+      },
+      {
+        "seed_offset": 1000,
+        "best_val_sl": 98.563,
+        "best_checkpoint": 600,
+        "eval_sl_mean": 99.52,
+        "eval_sl_std": 0.35
+      },
+      {
+        "seed_offset": 2000,
+        "best_val_sl": 99.101,
+        "best_checkpoint": 2000,
+        "eval_sl_mean": 99.49,
+        "eval_sl_std": 0.71
+      },
+      {
+        "seed_offset": 3000,
+        "best_val_sl": 99.292,
+        "best_checkpoint": 1800,
+        "eval_sl_mean": 99.57,
+        "eval_sl_std": 0.59
+      },
+      {
+        "seed_offset": 4000,
+        "best_val_sl": 97.938,
+        "best_checkpoint": 2000,
+        "eval_sl_mean": 99.52,
+        "eval_sl_std": 0.74
+      }
+    ],
+    "interpretation": "Std <= 1.0pp confirms policy robustness to initialisation. Std > 2.0pp suggests need for ensembling or more training episodes."
+  },
+  "C5_seasonal": {
+    "condition": "C5_seasonal_poisson",
+    "description": "Weekly cycle (amplitude 30%) + Q4 uplift (20%), Poisson base",
+    "baseline_sl": 81.78,
+    "agentic_sl": 99.27,
+    "delta_sl": 17.49,
+    "cohens_d": 6.42,
+    "p_value": 1.862645149230957e-09,
+    "wins": 30,
+    "n_runs": 30,
+    "baseline_profit": -205246.0,
+    "agentic_profit": 64290.0
+  },
+  "forecaster_comparison": {
+    "SKU_FIELD_SPORT": {
+      "holt_sl": 98.69,
+      "arima_sl": 98.68,
+      "delta_pp": -0.01,
+      "lambda": 15,
+      "n_runs": 20,
+      "interpretation": "ARIMA ~ Holt (stationary demand, difference < 0.5pp)"
+    },
+    "SKU_FITNESS": {
+      "holt_sl": 77.65,
+      "arima_sl": 88.24,
+      "delta_pp": 10.6,
+      "lambda": 22,
+      "n_runs": 20,
+      "interpretation": "ARIMA better by 10.6pp"
+    },
+    "SKU_BICYCLE": {
+      "holt_sl": 95.22,
+      "arima_sl": 95.93,
+      "delta_pp": 0.71,
+      "lambda": 8,
+      "n_runs": 20,
+      "interpretation": "ARIMA better by 0.7pp"
+    },
+    "SKU_WATCH": {
+      "holt_sl": 81.53,
+      "arima_sl": 81.4,
+      "delta_pp": -0.13,
+      "lambda": 30,
+      "n_runs": 20,
+      "interpretation": "ARIMA ~ Holt (stationary demand, difference < 0.5pp)"
+    },
+    "SKU_GOLF": {
+      "holt_sl": 98.38,
+      "arima_sl": 98.64,
+      "delta_pp": 0.26,
+      "lambda": 12,
+      "n_runs": 20,
+      "interpretation": "ARIMA ~ Holt (stationary demand, difference < 0.5pp)"
+    }
+  },
+  "lambda_sweep": {
+    "3": {
+      "lambda_val": 3,
+      "status": "OOD",
+      "ceiling_effect": true,
+      "baseline_sl": 100.0,
+      "agentic_sl": 100.0,
+      "delta_sl": 0.0,
+      "cohens_d": 0.0,
+      "wins": 0,
+      "n_runs": 20
+    },
+    "4": {
+      "lambda_val": 4,
+      "status": "OOD",
+      "ceiling_effect": true,
+      "baseline_sl": 100.0,
+      "agentic_sl": 99.92,
+      "delta_sl": -0.08,
+      "cohens_d": -0.3,
+      "wins": 0,
+      "n_runs": 20
+    },
+    "5": {
+      "lambda_val": 5,
+      "status": "OOD",
+      "ceiling_effect": true,
+      "baseline_sl": 99.89,
+      "agentic_sl": 99.65,
+      "delta_sl": -0.24,
+      "cohens_d": -0.28,
+      "wins": 2,
+      "n_runs": 20
+    },
+    "6": {
+      "lambda_val": 6,
+      "status": "In-dist",
+      "ceiling_effect": false,
+      "baseline_sl": 99.47,
+      "agentic_sl": 99.79,
+      "delta_sl": 0.32,
+      "cohens_d": 0.4,
+      "wins": 9,
+      "n_runs": 20
+    },
+    "8": {
+      "lambda_val": 8,
+      "status": "In-dist",
+      "ceiling_effect": false,
+      "baseline_sl": 98.64,
+      "agentic_sl": 99.88,
+      "delta_sl": 1.25,
+      "cohens_d": 1.08,
+      "wins": 18,
+      "n_runs": 20
+    },
+    "10": {
+      "lambda_val": 10,
+      "status": "In-dist",
+      "ceiling_effect": false,
+      "baseline_sl": 97.45,
+      "agentic_sl": 99.22,
+      "delta_sl": 1.78,
+      "cohens_d": 1.11,
+      "wins": 17,
+      "n_runs": 20
+    },
+    "12": {
+      "lambda_val": 12,
+      "status": "In-dist",
+      "ceiling_effect": false,
+      "baseline_sl": 93.88,
+      "agentic_sl": 99.6,
+      "delta_sl": 5.72,
+      "cohens_d": 2.49,
+      "wins": 20,
+      "n_runs": 20
+    },
+    "15": {
+      "lambda_val": 15,
+      "status": "In-dist",
+      "ceiling_effect": false,
+      "baseline_sl": 86.64,
+      "agentic_sl": 99.3,
+      "delta_sl": 12.67,
+      "cohens_d": 4.62,
+      "wins": 20,
+      "n_runs": 20
+    },
+    "20": {
+      "lambda_val": 20,
+      "status": "In-dist",
+      "ceiling_effect": false,
+      "baseline_sl": 70.33,
+      "agentic_sl": 88.18,
+      "delta_sl": 17.86,
+      "cohens_d": 2.06,
+      "wins": 19,
+      "n_runs": 20
+    },
+    "25": {
+      "lambda_val": 25,
+      "status": "In-dist",
+      "ceiling_effect": false,
+      "baseline_sl": 59.28,
+      "agentic_sl": 85.77,
+      "delta_sl": 26.49,
+      "cohens_d": 2.0,
+      "wins": 18,
+      "n_runs": 20
+    },
+    "27": {
+      "lambda_val": 27,
+      "status": "OOD",
+      "ceiling_effect": false,
+      "baseline_sl": 55.95,
+      "agentic_sl": 71.69,
+      "delta_sl": 15.73,
+      "cohens_d": 1.44,
+      "wins": 18,
+      "n_runs": 20
+    },
+    "29": {
+      "lambda_val": 29,
+      "status": "OOD",
+      "ceiling_effect": false,
+      "baseline_sl": 53.07,
+      "agentic_sl": 61.56,
+      "delta_sl": 8.49,
+      "cohens_d": 0.9,
+      "wins": 15,
+      "n_runs": 20
+    },
+    "32": {
+      "lambda_val": 32,
+      "status": "OOD",
+      "ceiling_effect": false,
+      "baseline_sl": 49.31,
+      "agentic_sl": 51.64,
+      "delta_sl": 2.32,
+      "cohens_d": 0.54,
+      "wins": 15,
+      "n_runs": 20
+    }
+  },
+  "carbon_formula_note": "FIXED: carbon=CARBON_FACTORS[mode]*qty (no SHIPPING_DAYS multiplier)",
+  "governance_activity": {
+    "base_hitl_reviews_per_year": 4.1,
+    "high_hitl_reviews_per_year": 23.9,
+    "base_gov_cap_enforcements_per_year": 2.3,
+    "high_gov_cap_enforcements_per_year": 11.4,
+    "scaling_factor": 5.8,
+    "note": "Calibrated from simulation run with verbose governance logging. Proportionate to disruption probability ratio (0.08/0.02 = 4x, HITL scales 5.8x due to interaction effects)."
+  }
+}

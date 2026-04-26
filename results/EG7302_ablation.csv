@@ -1,0 +1,6 @@
+Agent_Ablated,SL_pct,Delta_SL_pp,Delta_Cost_GBP_yr,Delta_Carbon_kgCO2e_yr,Primary_KPI
+Full Agentic (all agents active),99.36,0.0,0.0,0.0,—
+Ablate Forecaster (-> 7d MA),99.4,0.04,-7030.0,-27.2,—
+Ablate Inventory (-> ROP heuristic),96.32,-3.04,-63226.0,150.6,Service Level
+Ablate Logistics (-> fixed Standard),99.36,0.0,3041.0,226.8,Cost+Carbon
+Ablate Production (-> FIFO),99.36,0.0,-3041.0,0.0,—

@@ -1,0 +1,48 @@
+{
+  "kpi_robustness": {
+    "service_level": {
+      "cv_baseline_base": 0.0325988957121807,
+      "cv_agentic_base": 0.007101407794583689,
+      "cv_baseline_high": 0.07496107872522191,
+      "cv_agentic_high": 0.030978192182098532,
+      "baseline_variance_increase": 0.04236218301304121,
+      "agentic_variance_increase": 0.023876784387514845,
+      "agentic_more_robust": true,
+      "mean_baseline_base": 0.8606234294450028,
+      "mean_agentic_base": 0.9951063848155167,
+      "mean_baseline_high": 0.5191581701510846,
+      "mean_agentic_high": 0.9251198244012706
+    },
+    "profit": {
+      "cv_baseline_base": -0.3862673659879496,
+      "cv_agentic_base": 0.17495945658319437,
+      "cv_baseline_high": -0.10036498235465782,
+      "cv_agentic_high": -1.2011923888587248,
+      "baseline_variance_increase": 0.2859023836332918,
+      "agentic_variance_increase": -1.3761518454419193,
+      "agentic_more_robust": true,
+      "mean_baseline_base": -124368.21179046789,
+      "mean_agentic_base": 88579.42661210104,
+      "mean_baseline_high": -1147329.3830289342,
+      "mean_agentic_high": -80690.19683153083
+    },
+    "total_cost": {
+      "cv_baseline_base": 0.13696846705742574,
+      "cv_agentic_base": 0.1183960334957437,
+      "cv_baseline_high": 0.07693553437758821,
+      "cv_agentic_high": 0.2176823382190703,
+      "baseline_variance_increase": -0.06003293267983753,
+      "agentic_variance_increase": 0.0992863047233266,
+      "agentic_more_robust": false,
+      "mean_baseline_base": 307338.05745713465,
+      "mean_agentic_base": 122972.35586992203,
+      "mean_baseline_high": 1331050.0743622677,
+      "mean_agentic_high": 408086.7246232665
+    }
+  },
+  "objective_6_met": true,
+  "cv_based_met": true,
+  "sl_degradation_baseline": 34.15,
+  "sl_degradation_agentic": 7.0,
+  "sl_robustness_ratio": 4.9
+}

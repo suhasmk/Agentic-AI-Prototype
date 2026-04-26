@@ -1,0 +1,17 @@
+{
+  "converged": true,
+  "convergence_episode": 213,
+  "reward_early": -40217.4493116232,
+  "reward_mid": 82669.03163296523,
+  "reward_late": 96887.9395947831,
+  "reward_improvement_pct": 340.9102050307841,
+  "max_late_policy_changes": 26,
+  "avg_late_policy_changes": 15.18,
+  "reward_improving": true,
+  "n_episodes": 2000,
+  "convergence_threshold": 10,
+  "window_size": 50,
+  "formally_converged": true,
+  "functionally_converged": true,
+  "obj4_met": true
+}

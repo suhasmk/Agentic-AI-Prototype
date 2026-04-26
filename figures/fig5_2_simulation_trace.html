@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Figure 5.2 — Simulation Trace</title>
+<style>
+body{font-family:"Segoe UI",Arial,sans-serif;background:#faf8f4;margin:36px;color:#1a1a1a}
+h2{font-size:13px;font-weight:600;color:#1B3A6B;margin:0 0 8px}
+.legend{display:flex;gap:20px;margin:0 0 10px;font-size:11px;color:#555}
+.ld{display:flex;align-items:center;gap:5px}
+.ls{width:26px;height:3px;border-radius:2px;display:inline-block}
+.chart-wrap{position:relative;width:100%;height:360px}
+p.cap{font-size:10.5px;color:#666;margin:7px 0 0;line-height:1.55}
+</style></head><body>
+<div style="max-width:860px;margin:0 auto">
+<h2>Figure 5.2 — Simulation Trace Comparison: RL Agent vs (s,S) Policy, Days 41&#8211;49</h2>
+<div class="legend">
+  <div class="ld"><div class="ls" style="background:#7F77DD"></div>RL Inventory Agent</div>
+  <div class="ld"><div class="ls" style="background:#888780"></div><span style="text-decoration:underline;text-decoration-style:dashed">(s,S) Policy (s=175, S=325)</span></div>
+  <div class="ld"><div style="width:12px;height:12px;background:rgba(224,68,50,0.15);border:1px solid rgba(224,68,50,0.3);border-radius:2px"></div>Disruption active</div>
+  <div class="ld"><div class="ls" style="background:#BA7517"></div>Reorder threshold s=175</div>
+</div>
+<div class="chart-wrap">
+  <canvas id="c" role="img" aria-label="Line chart showing RL agent inventory remains high (305u on Day 48) while (s,S) policy declines to 63u by Day 49 after disruption Days 43-47.">
+    RL: 183,211,217,199,178,154,128,305,280. sS: 183,211,217,194,168,141,116,88,63.
+  </canvas>
+</div>
+<p class="cap">
+  <strong>Day 43:</strong> disruption_flag=1 detected. RL orders 200u proactively (inv=217 > s=175 — threshold not yet reached).
+  (s,S) orders 0u. &nbsp;&#183;&nbsp;
+  <strong>Day 45:</strong> (s,S) finally triggers (inv=168 &lt; s=175); disrupted LT = 12.5 days — order will arrive ~Day 57.5. &nbsp;&#183;&nbsp;
+  <strong>Day 48:</strong> RL proactive orders arrive; inventory restored to 305u. (s,S) at 88u and declining.
+  Wilcoxon p=1.86&times;10&#8315;&#8313; across 30 paired runs.
+</p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const plug={id:'custom',
+  beforeDraw(ch){
+    const{ctx,chartArea:ca,scales}=ch;
+    const g=scales.x.getPixelForValue(1)-scales.x.getPixelForValue(0);
+    const x43=scales.x.getPixelForValue(2)-g/2,x47=scales.x.getPixelForValue(6)+g/2;
+    ctx.save();ctx.fillStyle='rgba(224,68,50,0.08)';
+    ctx.fillRect(x43,ca.top,x47-x43,ca.bottom-ca.top);
+    ctx.strokeStyle='rgba(224,68,50,0.22)';ctx.lineWidth=0.8;ctx.setLineDash([]);
+    ctx.beginPath();ctx.moveTo(x43,ca.top);ctx.lineTo(x43,ca.bottom);
+    ctx.moveTo(x47,ca.top);ctx.lineTo(x47,ca.bottom);ctx.stroke();
+    const y175=scales.y.getPixelForValue(175);
+    ctx.strokeStyle='#BA7517';ctx.lineWidth=1.4;ctx.setLineDash([7,4]);
+    ctx.beginPath();ctx.moveTo(ca.left,y175);ctx.lineTo(ca.right,y175);ctx.stroke();
+    ctx.restore();
+  },
+  afterDraw(ch){
+    const{ctx,chartArea:ca,scales}=ch;
+    const g=scales.x.getPixelForValue(1)-scales.x.getPixelForValue(0);
+    const xMid=(scales.x.getPixelForValue(2)+scales.x.getPixelForValue(6))/2;
+    ctx.save();
+    ctx.font='10px Segoe UI,Arial,sans-serif';ctx.textAlign='center';
+    ctx.fillStyle='#A32D2D';ctx.fillText('Disruption active (Days 43–47)',xMid,ca.top+13);
+    const y175=scales.y.getPixelForValue(175);
+    ctx.fillStyle='#854F0B';ctx.textAlign='left';
+    ctx.fillText('s = 175  (reorder threshold)',ca.left+5,y175-5);
+    // Day 43 annotation
+    const x43=scales.x.getPixelForValue(2),yRL43=scales.y.getPixelForValue(217);
+    ctx.strokeStyle='#5b2d8e';ctx.lineWidth=1;ctx.setLineDash([3,2]);
+    ctx.beginPath();ctx.moveTo(x43,yRL43-8);ctx.lineTo(x43,yRL43-34);ctx.stroke();
+    ctx.font='bold 10px Segoe UI,Arial,sans-serif';ctx.fillStyle='#3C3489';
+    ctx.textAlign='center';ctx.setLineDash([]);
+    ctx.fillText('RL orders 200u',x43,yRL43-38);
+    ctx.font='9.5px Segoe UI,Arial,sans-serif';ctx.fillStyle='#5b2d8e';
+    ctx.fillText('disruption_flag=1',x43,yRL43-26);
+    // Day 48
+    const x48=scales.x.getPixelForValue(7),yRL48=scales.y.getPixelForValue(305);
+    ctx.strokeStyle='#5b2d8e';ctx.lineWidth=1;ctx.setLineDash([3,2]);
+    ctx.beginPath();ctx.moveTo(x48,yRL48-8);ctx.lineTo(x48,yRL48-30);ctx.stroke();
+    ctx.font='bold 10px Segoe UI,Arial,sans-serif';ctx.fillStyle='#3C3489';
+    ctx.textAlign='center';ctx.setLineDash([]);ctx.fillText('Order arrives',x48,yRL48-34);
+    // sS risk label
+    const x49=scales.x.getPixelForValue(8),ySS49=scales.y.getPixelForValue(63);
+    ctx.font='9.5px Segoe UI,Arial,sans-serif';ctx.fillStyle='#9b2020';
+    ctx.fillText('Stockout risk',x49,ySS49-8);
+    ctx.restore();
+  }
+};
+new Chart(document.getElementById('c'),{
+  type:'line',plugins:[plug],
+  data:{
+    labels:['Day 41','Day 42','Day 43','Day 44','Day 45','Day 46','Day 47','Day 48','Day 49'],
+    datasets:[
+      {label:'RL Inventory Agent',data:[183,211,217,199,178,154,128,305,280],
+       borderColor:'#7F77DD',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#7F77DD',
+       tension:0.22,fill:false},
+      {label:'(s,S) Policy',data:[183,211,217,194,168,141,116,88,63],
+       borderColor:'#888780',borderWidth:2,borderDash:[6,4],pointRadius:5,
+       pointBackgroundColor:'#888780',tension:0.22,fill:false}
+    ]
+  },
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${c.raw}u`}}},
+    scales:{
+      x:{grid:{color:'rgba(0,0,0,0.07)'},ticks:{font:{size:11},color:'#666'}},
+      y:{min:0,max:340,
+         title:{display:true,text:'Inventory on-hand (units)',font:{size:11},color:'#666'},
+         grid:{color:'rgba(0,0,0,0.07)'},ticks:{font:{size:11},color:'#666'}}
+    }
+  }
+});
+</script>
+</body></html>

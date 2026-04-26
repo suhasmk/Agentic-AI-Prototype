@@ -1,0 +1,6 @@
+Condition,n_runs,Baseline_SL_pct,Ollama_LLM_SL_pct,QTable_SL_pct,Delta_LLM_vs_Baseline_pp,Delta_RL_vs_LLM_pp,d_LLM_vs_B,Cache_hit_pct,Experiment_time_min,Cost_GBP,Model,EU_AI_Act_Art14c
+C1_base_poisson,5,86.06,100.0,99.35,13.94,-0.65,4.97,99.5,1.5,0.0,gemma2:2b,PARTIAL
+C2_high_poisson,5,51.92,99.98,96.05,48.06,-3.93,12.4,99.6,1.2,0.0,gemma2:2b,PARTIAL
+
+NOTE: LLM achieves 100% SL via over-ordering. Q-table achieves 96-99% via calibrated ordering.
+NOTE: Only Q-table satisfies EU AI Act Art.14(4)(c) inspectability requirement.

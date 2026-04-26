@@ -1,0 +1,5 @@
+Condition,s_param,S_param,sS_SL_pct,Agentic_SL_pct,Delta_vs_sS_pp,Cohens_d_vs_sS
+C1_base_poisson,90,190,92.29,99.35,7.06,2.84
+C2_high_poisson,175,325,86.46,96.05,9.59,2.45
+C3_base_negbin,110,210,94.69,99.26,4.57,2.55
+C4_high_negbin,195,345,89.08,94.99,5.91,1.65

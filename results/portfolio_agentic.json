@@ -1,0 +1,6206 @@
+[
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9825592069028823,
+        "profit": 126115.96836986313,
+        "total_cost": 81381.07163013691,
+        "carbon_kgco2e": 1075.0,
+        "stockout_days": 9,
+        "n_orders": 63,
+        "shipping_modes": {
+          "Standard Class": 52,
+          "Second Class": 10,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 340,
+          "escalated": 25,
+          "escalation_rate_pct": 6.8493150684931505,
+          "modified_by_human": 20,
+          "modification_rate_pct": 5.47945205479452,
+          "avg_qty_change": -142.5
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.7588448556069509,
+        "profit": -236708.3078767124,
+        "total_cost": 421843.3078767124,
+        "carbon_kgco2e": 2613.75,
+        "stockout_days": 108,
+        "n_orders": 92,
+        "shipping_modes": {
+          "Standard Class": 14,
+          "Second Class": 78
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 362,
+          "escalated": 3,
+          "escalation_rate_pct": 0.821917808219178,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 0.9986296676944159,
+        "profit": 142198.97260273973,
+        "total_cost": 88086.02739726027,
+        "carbon_kgco2e": 716.25,
+        "stockout_days": 1,
+        "n_orders": 89,
+        "shipping_modes": {
+          "Standard Class": 89
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 327,
+          "escalated": 38,
+          "escalation_rate_pct": 10.41095890410959,
+          "modified_by_human": 9,
+          "modification_rate_pct": 2.4657534246575343,
+          "avg_qty_change": -130.55555555555554
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7016417499770705,
+        "profit": -257174.96712328773,
+        "total_cost": 433124.96712328773,
+        "carbon_kgco2e": 3397.5,
+        "stockout_days": 138,
+        "n_orders": 77,
+        "shipping_modes": {
+          "Second Class": 77
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 360,
+          "escalated": 5,
+          "escalation_rate_pct": 1.36986301369863,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9958496656675121,
+        "profit": 15047.092465753318,
+        "total_cost": 136117.90753424668,
+        "carbon_kgco2e": 1382.5,
+        "stockout_days": 1,
+        "n_orders": 130,
+        "shipping_modes": {
+          "Standard Class": 128,
+          "First Class": 1,
+          "Second Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 359,
+          "escalated": 6,
+          "escalation_rate_pct": 1.643835616438356,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -175.0
+        }
+      }
+    },
+    "portfolio_profit": -210521.24156164395,
+    "portfolio_carbon": 9185.0,
+    "portfolio_cost": 1160553.281561644,
+    "portfolio_sl": 0.8875050291697664,
+    "portfolio_stockout": 257,
+    "consolidation": {
+      "total_shipments": 443,
+      "consolidated_shipments": 8,
+      "consolidation_rate_pct": 1.805869074492099,
+      "total_cost_saved": 1320.0,
+      "total_carbon_saved_kg": 26.62,
+      "consolidation_events": 8
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 3,
+          "n_alerts": 2,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.8408,
+          "avg_rolling_sl": 0.9807925595238094,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 37,
+          "n_alerts": 30,
+          "n_retrain_triggers": 7,
+          "min_rolling_sl": 0.4448,
+          "avg_rolling_sl": 0.753633630952381,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9833,
+          "avg_rolling_sl": 0.999035119047619,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 11,
+          "n_alerts": 7,
+          "n_retrain_triggers": 4,
+          "min_rolling_sl": 0.5123,
+          "avg_rolling_sl": 0.7118851190476191,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9503,
+          "avg_rolling_sl": 0.9986919642857143,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 51,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.89,
+          "rolling_30d": 0.89,
+          "lead_time_multiplier": 1.055
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.967,
+          "rolling_30d": 0.885,
+          "lead_time_multiplier": 1.016
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.893,
+          "rolling_30d": 0.773,
+          "lead_time_multiplier": 1.054
+        }
+      },
+      "low_reliability_events": 32
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9877692588535962,
+        "profit": 131423.92856164387,
+        "total_cost": 78360.54143835623,
+        "carbon_kgco2e": 1221.25,
+        "stockout_days": 7,
+        "n_orders": 66,
+        "shipping_modes": {
+          "Standard Class": 51,
+          "Second Class": 14,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 339,
+          "escalated": 26,
+          "escalation_rate_pct": 7.123287671232877,
+          "modified_by_human": 23,
+          "modification_rate_pct": 6.301369863013699,
+          "avg_qty_change": -140.2173913043478
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.7862469978510934,
+        "profit": -191011.12226027407,
+        "total_cost": 380721.1222602741,
+        "carbon_kgco2e": 2650.0,
+        "stockout_days": 106,
+        "n_orders": 95,
+        "shipping_modes": {
+          "Standard Class": 14,
+          "Second Class": 80,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 361,
+          "escalated": 4,
+          "escalation_rate_pct": 1.095890410958904,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 152759.89041095896,
+        "total_cost": 76735.10958904104,
+        "carbon_kgco2e": 671.25,
+        "stockout_days": 0,
+        "n_orders": 81,
+        "shipping_modes": {
+          "Standard Class": 81
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 330,
+          "escalated": 35,
+          "escalation_rate_pct": 9.58904109589041,
+          "modified_by_human": 9,
+          "modification_rate_pct": 2.4657534246575343,
+          "avg_qty_change": -130.55555555555554
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7062019013128112,
+        "profit": -254692.50410958892,
+        "total_cost": 434092.5041095889,
+        "carbon_kgco2e": 3465.0,
+        "stockout_days": 144,
+        "n_orders": 77,
+        "shipping_modes": {
+          "Second Class": 77
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 361,
+          "escalated": 4,
+          "escalation_rate_pct": 1.095890410958904,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9765342960288809,
+        "profit": 20058.613013698603,
+        "total_cost": 131421.3869863014,
+        "carbon_kgco2e": 1421.25,
+        "stockout_days": 11,
+        "n_orders": 112,
+        "shipping_modes": {
+          "Second Class": 6,
+          "Standard Class": 103,
+          "First Class": 3
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 357,
+          "escalated": 8,
+          "escalation_rate_pct": 2.191780821917808,
+          "modified_by_human": 3,
+          "modification_rate_pct": 0.821917808219178,
+          "avg_qty_change": -125.0
+        }
+      }
+    },
+    "portfolio_profit": -141461.19438356155,
+    "portfolio_carbon": 9428.75,
+    "portfolio_cost": 1101330.6643835616,
+    "portfolio_sl": 0.8913504908092763,
+    "portfolio_stockout": 268,
+    "consolidation": {
+      "total_shipments": 423,
+      "consolidated_shipments": 8,
+      "consolidation_rate_pct": 1.8912529550827424,
+      "total_cost_saved": 2130.0,
+      "total_carbon_saved_kg": 52.5,
+      "consolidation_events": 8
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.8998,
+          "avg_rolling_sl": 0.9870541666666666,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 34,
+          "n_alerts": 29,
+          "n_retrain_triggers": 5,
+          "min_rolling_sl": 0.5644,
+          "avg_rolling_sl": 0.778572619047619,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 5,
+          "n_alerts": 3,
+          "n_retrain_triggers": 2,
+          "min_rolling_sl": 0.4571,
+          "avg_rolling_sl": 0.7022702380952381,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 31,
+          "n_alerts": 31,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.847,
+          "avg_rolling_sl": 0.9814592261904762,
+          "retraining_recommended": false,
+          "policy_stable": false
+        }
+      },
+      "total_drift_events": 70,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.903,
+          "rolling_30d": 0.916,
+          "lead_time_multiplier": 1.048
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.851,
+          "rolling_30d": 0.881,
+          "lead_time_multiplier": 1.074
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.653,
+          "rolling_30d": 0.772,
+          "lead_time_multiplier": 1.174
+        }
+      },
+      "low_reliability_events": 36
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9869503038970325,
+        "profit": 135937.12995205488,
+        "total_cost": 78112.04004794516,
+        "carbon_kgco2e": 1132.5,
+        "stockout_days": 7,
+        "n_orders": 63,
+        "shipping_modes": {
+          "Standard Class": 51,
+          "Second Class": 12
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 343,
+          "escalated": 22,
+          "escalation_rate_pct": 6.027397260273973,
+          "modified_by_human": 19,
+          "modification_rate_pct": 5.205479452054795,
+          "avg_qty_change": -135.52631578947367
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.7816962622625109,
+        "profit": -200531.93013698625,
+        "total_cost": 392529.43013698625,
+        "carbon_kgco2e": 2591.25,
+        "stockout_days": 98,
+        "n_orders": 96,
+        "shipping_modes": {
+          "Standard Class": 17,
+          "Second Class": 79
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 362,
+          "escalated": 3,
+          "escalation_rate_pct": 0.821917808219178,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 153878.24657534243,
+        "total_cost": 75063.75342465758,
+        "carbon_kgco2e": 581.25,
+        "stockout_days": 0,
+        "n_orders": 82,
+        "shipping_modes": {
+          "Standard Class": 82
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 331,
+          "escalated": 34,
+          "escalation_rate_pct": 9.315068493150685,
+          "modified_by_human": 6,
+          "modification_rate_pct": 1.643835616438356,
+          "avg_qty_change": -133.33333333333334
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7102778282186308,
+        "profit": -248902.34794520558,
+        "total_cost": 428831.3479452056,
+        "carbon_kgco2e": 3476.25,
+        "stockout_days": 134,
+        "n_orders": 78,
+        "shipping_modes": {
+          "Second Class": 78
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 357,
+          "escalated": 8,
+          "escalation_rate_pct": 2.191780821917808,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9764172335600907,
+        "profit": 17904.263698630122,
+        "total_cost": 132805.73630136988,
+        "carbon_kgco2e": 1433.75,
+        "stockout_days": 10,
+        "n_orders": 113,
+        "shipping_modes": {
+          "Standard Class": 104,
+          "First Class": 2,
+          "Second Class": 7
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 357,
+          "escalated": 8,
+          "escalation_rate_pct": 2.191780821917808,
+          "modified_by_human": 2,
+          "modification_rate_pct": 0.547945205479452,
+          "avg_qty_change": -125.0
+        }
+      }
+    },
+    "portfolio_profit": -141714.6378561644,
+    "portfolio_carbon": 9215.0,
+    "portfolio_cost": 1107342.3078561644,
+    "portfolio_sl": 0.8910683255876531,
+    "portfolio_stockout": 249,
+    "consolidation": {
+      "total_shipments": 425,
+      "consolidated_shipments": 7,
+      "consolidation_rate_pct": 1.647058823529412,
+      "total_cost_saved": 1425.0,
+      "total_carbon_saved_kg": 30.75,
+      "consolidation_events": 7
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9207,
+          "avg_rolling_sl": 0.9861485119047619,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 27,
+          "n_alerts": 22,
+          "n_retrain_triggers": 5,
+          "min_rolling_sl": 0.593,
+          "avg_rolling_sl": 0.7831255952380954,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 20,
+          "n_alerts": 13,
+          "n_retrain_triggers": 7,
+          "min_rolling_sl": 0.4251,
+          "avg_rolling_sl": 0.7275800595238094,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 21,
+          "n_alerts": 20,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.8378,
+          "avg_rolling_sl": 0.9778535714285714,
+          "retraining_recommended": false,
+          "policy_stable": false
+        }
+      },
+      "total_drift_events": 68,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.934,
+          "rolling_30d": 0.929,
+          "lead_time_multiplier": 1.033
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.97,
+          "rolling_30d": 0.874,
+          "lead_time_multiplier": 1.015
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.862,
+          "rolling_30d": 0.793,
+          "lead_time_multiplier": 1.069
+        }
+      },
+      "low_reliability_events": 22
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9953471725125268,
+        "profit": 153334.0605753426,
+        "total_cost": 62304.679424657515,
+        "carbon_kgco2e": 1023.75,
+        "stockout_days": 3,
+        "n_orders": 67,
+        "shipping_modes": {
+          "Standard Class": 58,
+          "Second Class": 9
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 335,
+          "escalated": 30,
+          "escalation_rate_pct": 8.21917808219178,
+          "modified_by_human": 25,
+          "modification_rate_pct": 6.8493150684931505,
+          "avg_qty_change": -133.0
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.8057200453571879,
+        "profit": -160227.8784246575,
+        "total_cost": 355275.3784246575,
+        "carbon_kgco2e": 2643.75,
+        "stockout_days": 93,
+        "n_orders": 100,
+        "shipping_modes": {
+          "Standard Class": 24,
+          "Second Class": 76
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 361,
+          "escalated": 4,
+          "escalation_rate_pct": 1.095890410958904,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 0.9993136582017845,
+        "profit": 162152.6164383562,
+        "total_cost": 67895.3835616438,
+        "carbon_kgco2e": 641.25,
+        "stockout_days": 1,
+        "n_orders": 78,
+        "shipping_modes": {
+          "Standard Class": 78
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 330,
+          "escalated": 35,
+          "escalation_rate_pct": 9.58904109589041,
+          "modified_by_human": 13,
+          "modification_rate_pct": 3.5616438356164384,
+          "avg_qty_change": -128.84615384615384
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7803257803257804,
+        "profit": -160602.27123287664,
+        "total_cost": 357827.27123287664,
+        "carbon_kgco2e": 3833.75,
+        "stockout_days": 109,
+        "n_orders": 87,
+        "shipping_modes": {
+          "Second Class": 85,
+          "First Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 361,
+          "escalated": 4,
+          "escalation_rate_pct": 1.095890410958904,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 1.0,
+        "profit": 20802.77739726033,
+        "total_cost": 131027.22260273967,
+        "carbon_kgco2e": 1363.75,
+        "stockout_days": 0,
+        "n_orders": 122,
+        "shipping_modes": {
+          "Standard Class": 119,
+          "Second Class": 2,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 360,
+          "escalated": 5,
+          "escalation_rate_pct": 1.36986301369863,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      }
+    },
+    "portfolio_profit": 15459.304753424978,
+    "portfolio_carbon": 9506.25,
+    "portfolio_cost": 974329.9352465752,
+    "portfolio_sl": 0.916141331279456,
+    "portfolio_stockout": 206,
+    "consolidation": {
+      "total_shipments": 450,
+      "consolidated_shipments": 4,
+      "consolidation_rate_pct": 0.8888888888888888,
+      "total_cost_saved": 915.0,
+      "total_carbon_saved_kg": 18.75,
+      "consolidation_events": 4
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.958,
+          "avg_rolling_sl": 0.9973976190476189,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 24,
+          "n_alerts": 16,
+          "n_retrain_triggers": 8,
+          "min_rolling_sl": 0.554,
+          "avg_rolling_sl": 0.7956592261904761,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9918,
+          "avg_rolling_sl": 0.9997827380952382,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 17,
+          "n_alerts": 10,
+          "n_retrain_triggers": 7,
+          "min_rolling_sl": 0.5079,
+          "avg_rolling_sl": 0.7702669642857144,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 41,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.896,
+          "rolling_30d": 0.941,
+          "lead_time_multiplier": 1.052
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.813,
+          "rolling_30d": 0.87,
+          "lead_time_multiplier": 1.093
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.656,
+          "rolling_30d": 0.763,
+          "lead_time_multiplier": 1.172
+        }
+      },
+      "low_reliability_events": 39
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9981854472872437,
+        "profit": 154398.4876575342,
+        "total_cost": 58875.28234246581,
+        "carbon_kgco2e": 993.75,
+        "stockout_days": 1,
+        "n_orders": 86,
+        "shipping_modes": {
+          "Standard Class": 79,
+          "Second Class": 7
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 344,
+          "escalated": 21,
+          "escalation_rate_pct": 5.7534246575342465,
+          "modified_by_human": 16,
+          "modification_rate_pct": 4.383561643835616,
+          "avg_qty_change": -128.125
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.8078953985416143,
+        "profit": -159184.33013698662,
+        "total_cost": 355177.3301369866,
+        "carbon_kgco2e": 2780.0,
+        "stockout_days": 90,
+        "n_orders": 99,
+        "shipping_modes": {
+          "Standard Class": 14,
+          "Second Class": 80,
+          "First Class": 5
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 362,
+          "escalated": 3,
+          "escalation_rate_pct": 0.821917808219178,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 0.9973244147157191,
+        "profit": 158106.24657534243,
+        "total_cost": 77471.75342465758,
+        "carbon_kgco2e": 622.5,
+        "stockout_days": 2,
+        "n_orders": 72,
+        "shipping_modes": {
+          "Standard Class": 70,
+          "Second Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 335,
+          "escalated": 30,
+          "escalation_rate_pct": 8.21917808219178,
+          "modified_by_human": 5,
+          "modification_rate_pct": 1.36986301369863,
+          "avg_qty_change": -135.0
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7266851338873499,
+        "profit": -224508.70958904113,
+        "total_cost": 405518.70958904113,
+        "carbon_kgco2e": 3498.75,
+        "stockout_days": 127,
+        "n_orders": 80,
+        "shipping_modes": {
+          "Second Class": 80
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 363,
+          "escalated": 2,
+          "escalation_rate_pct": 0.547945205479452,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9927388245972317,
+        "profit": 10309.698630137049,
+        "total_cost": 142815.30136986295,
+        "carbon_kgco2e": 1428.75,
+        "stockout_days": 3,
+        "n_orders": 130,
+        "shipping_modes": {
+          "Standard Class": 127,
+          "Second Class": 3
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 356,
+          "escalated": 9,
+          "escalation_rate_pct": 2.4657534246575343,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      }
+    },
+    "portfolio_profit": -60878.60686301408,
+    "portfolio_carbon": 9323.75,
+    "portfolio_cost": 1039858.3768630141,
+    "portfolio_sl": 0.9045658438058318,
+    "portfolio_stockout": 223,
+    "consolidation": {
+      "total_shipments": 463,
+      "consolidated_shipments": 4,
+      "consolidation_rate_pct": 0.8639308855291578,
+      "total_cost_saved": 960.0,
+      "total_carbon_saved_kg": 23.25,
+      "consolidation_events": 4
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9777,
+          "avg_rolling_sl": 0.9981193452380953,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 42,
+          "n_alerts": 32,
+          "n_retrain_triggers": 10,
+          "min_rolling_sl": 0.5547,
+          "avg_rolling_sl": 0.7998803571428572,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9667,
+          "avg_rolling_sl": 0.997188988095238,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 4,
+          "n_alerts": 0,
+          "n_retrain_triggers": 4,
+          "min_rolling_sl": 0.4378,
+          "avg_rolling_sl": 0.7282747023809524,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9144,
+          "avg_rolling_sl": 0.9977252976190476,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 46,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.93,
+          "rolling_30d": 0.931,
+          "lead_time_multiplier": 1.035
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.765,
+          "rolling_30d": 0.867,
+          "lead_time_multiplier": 1.118
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.863,
+          "rolling_30d": 0.812,
+          "lead_time_multiplier": 1.068
+        }
+      },
+      "low_reliability_events": 31
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9966765140324964,
+        "profit": 149649.9473698631,
+        "total_cost": 59630.51263013696,
+        "carbon_kgco2e": 1020.0,
+        "stockout_days": 3,
+        "n_orders": 70,
+        "shipping_modes": {
+          "Standard Class": 60,
+          "Second Class": 10
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 342,
+          "escalated": 23,
+          "escalation_rate_pct": 6.301369863013699,
+          "modified_by_human": 17,
+          "modification_rate_pct": 4.657534246575342,
+          "avg_qty_change": -133.8235294117647
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.7880305496431701,
+        "profit": -190590.42157534277,
+        "total_cost": 382557.42157534277,
+        "carbon_kgco2e": 2688.75,
+        "stockout_days": 101,
+        "n_orders": 100,
+        "shipping_modes": {
+          "Standard Class": 19,
+          "Second Class": 81
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 363,
+          "escalated": 2,
+          "escalation_rate_pct": 0.547945205479452,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 151488.3424657534,
+        "total_cost": 78559.6575342466,
+        "carbon_kgco2e": 697.5,
+        "stockout_days": 0,
+        "n_orders": 95,
+        "shipping_modes": {
+          "Standard Class": 95
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 333,
+          "escalated": 32,
+          "escalation_rate_pct": 8.767123287671232,
+          "modified_by_human": 13,
+          "modification_rate_pct": 3.5616438356164384,
+          "avg_qty_change": -128.84615384615384
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7034680526928936,
+        "profit": -260841.5945205479,
+        "total_cost": 441391.5945205479,
+        "carbon_kgco2e": 3487.5,
+        "stockout_days": 139,
+        "n_orders": 78,
+        "shipping_modes": {
+          "Second Class": 78
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 360,
+          "escalated": 5,
+          "escalation_rate_pct": 1.36986301369863,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 1.0,
+        "profit": 39765.756849315076,
+        "total_cost": 118784.24315068492,
+        "carbon_kgco2e": 1316.25,
+        "stockout_days": 0,
+        "n_orders": 117,
+        "shipping_modes": {
+          "Standard Class": 115,
+          "Second Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 355,
+          "escalated": 10,
+          "escalation_rate_pct": 2.73972602739726,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -175.0
+        }
+      }
+    },
+    "portfolio_profit": -110527.96941095908,
+    "portfolio_carbon": 9210.0,
+    "portfolio_cost": 1080923.4294109591,
+    "portfolio_sl": 0.897635023273712,
+    "portfolio_stockout": 243,
+    "consolidation": {
+      "total_shipments": 455,
+      "consolidated_shipments": 5,
+      "consolidation_rate_pct": 1.098901098901099,
+      "total_cost_saved": 1095.0,
+      "total_carbon_saved_kg": 24.38,
+      "consolidation_events": 5
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9763,
+          "avg_rolling_sl": 0.9964419642857143,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 44,
+          "n_alerts": 38,
+          "n_retrain_triggers": 6,
+          "min_rolling_sl": 0.5661,
+          "avg_rolling_sl": 0.7858071428571429,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 1,
+          "n_alerts": 0,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.3909,
+          "avg_rolling_sl": 0.7015717261904761,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 45,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.956,
+          "rolling_30d": 0.919,
+          "lead_time_multiplier": 1.022
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.922,
+          "rolling_30d": 0.904,
+          "lead_time_multiplier": 1.039
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.757,
+          "rolling_30d": 0.786,
+          "lead_time_multiplier": 1.121
+        }
+      },
+      "low_reliability_events": 25
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9639308060360692,
+        "profit": 92050.46767123291,
+        "total_cost": 111026.7923287671,
+        "carbon_kgco2e": 1142.5,
+        "stockout_days": 16,
+        "n_orders": 65,
+        "shipping_modes": {
+          "Standard Class": 49,
+          "First Class": 4,
+          "Second Class": 12
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 344,
+          "escalated": 21,
+          "escalation_rate_pct": 5.7534246575342465,
+          "modified_by_human": 14,
+          "modification_rate_pct": 3.8356164383561646,
+          "avg_qty_change": -135.71428571428572
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.82025,
+        "profit": -138727.90205479466,
+        "total_cost": 338868.90205479466,
+        "carbon_kgco2e": 2717.5,
+        "stockout_days": 91,
+        "n_orders": 102,
+        "shipping_modes": {
+          "Standard Class": 23,
+          "Second Class": 78,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 362,
+          "escalated": 3,
+          "escalation_rate_pct": 0.821917808219178,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 157730.89041095893,
+        "total_cost": 70421.10958904107,
+        "carbon_kgco2e": 607.5,
+        "stockout_days": 0,
+        "n_orders": 83,
+        "shipping_modes": {
+          "Standard Class": 83
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 335,
+          "escalated": 30,
+          "escalation_rate_pct": 8.21917808219178,
+          "modified_by_human": 6,
+          "modification_rate_pct": 1.643835616438356,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7681362913039408,
+        "profit": -171282.33150684932,
+        "total_cost": 360020.3315068493,
+        "carbon_kgco2e": 3667.5,
+        "stockout_days": 118,
+        "n_orders": 84,
+        "shipping_modes": {
+          "Second Class": 84
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 359,
+          "escalated": 6,
+          "escalation_rate_pct": 1.643835616438356,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9997742153985099,
+        "profit": 14067.328767123196,
+        "total_cost": 140912.6712328768,
+        "carbon_kgco2e": 1458.75,
+        "stockout_days": 1,
+        "n_orders": 135,
+        "shipping_modes": {
+          "Standard Class": 132,
+          "Second Class": 3
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 351,
+          "escalated": 14,
+          "escalation_rate_pct": 3.8356164383561646,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -175.0
+        }
+      }
+    },
+    "portfolio_profit": -46161.54671232894,
+    "portfolio_carbon": 9593.75,
+    "portfolio_cost": 1021249.8067123289,
+    "portfolio_sl": 0.9104182625477039,
+    "portfolio_stockout": 226,
+    "consolidation": {
+      "total_shipments": 466,
+      "consolidated_shipments": 3,
+      "consolidation_rate_pct": 0.6437768240343348,
+      "total_cost_saved": 660.0,
+      "total_carbon_saved_kg": 13.88,
+      "consolidation_events": 3
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 4,
+          "n_alerts": 3,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.6234,
+          "avg_rolling_sl": 0.9708880952380952,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 54,
+          "n_alerts": 46,
+          "n_retrain_triggers": 8,
+          "min_rolling_sl": 0.4832,
+          "avg_rolling_sl": 0.8193113095238095,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 21,
+          "n_alerts": 14,
+          "n_retrain_triggers": 7,
+          "min_rolling_sl": 0.5663,
+          "avg_rolling_sl": 0.7662095238095238,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9972,
+          "avg_rolling_sl": 0.9999342261904761,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 79,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.735,
+          "rolling_30d": 0.92,
+          "lead_time_multiplier": 1.132
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.89,
+          "rolling_30d": 0.899,
+          "lead_time_multiplier": 1.055
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.844,
+          "rolling_30d": 0.771,
+          "lead_time_multiplier": 1.078
+        }
+      },
+      "low_reliability_events": 39
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9954545454545455,
+        "profit": 146263.1447054796,
+        "total_cost": 57511.97529452053,
+        "carbon_kgco2e": 888.75,
+        "stockout_days": 3,
+        "n_orders": 57,
+        "shipping_modes": {
+          "Standard Class": 53,
+          "Second Class": 4
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 341,
+          "escalated": 24,
+          "escalation_rate_pct": 6.575342465753424,
+          "modified_by_human": 20,
+          "modification_rate_pct": 5.47945205479452,
+          "avg_qty_change": -132.5
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.767686904164576,
+        "profit": -221241.70821917796,
+        "total_cost": 407901.70821917796,
+        "carbon_kgco2e": 2580.0,
+        "stockout_days": 107,
+        "n_orders": 93,
+        "shipping_modes": {
+          "Standard Class": 15,
+          "Second Class": 78
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 361,
+          "escalated": 4,
+          "escalation_rate_pct": 1.095890410958904,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 146569.91780821915,
+        "total_cost": 88929.08219178084,
+        "carbon_kgco2e": 720.0,
+        "stockout_days": 0,
+        "n_orders": 86,
+        "shipping_modes": {
+          "Standard Class": 86
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 324,
+          "escalated": 41,
+          "escalation_rate_pct": 11.232876712328768,
+          "modified_by_human": 4,
+          "modification_rate_pct": 1.095890410958904,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7465454545454545,
+        "profit": -203399.43835616455,
+        "total_cost": 392275.43835616455,
+        "carbon_kgco2e": 3667.5,
+        "stockout_days": 122,
+        "n_orders": 83,
+        "shipping_modes": {
+          "Second Class": 83
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 362,
+          "escalated": 3,
+          "escalation_rate_pct": 0.821917808219178,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9766031195840554,
+        "profit": 32336.23287671234,
+        "total_cost": 125443.76712328766,
+        "carbon_kgco2e": 1352.5,
+        "stockout_days": 10,
+        "n_orders": 114,
+        "shipping_modes": {
+          "Standard Class": 105,
+          "Second Class": 8,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 349,
+          "escalated": 16,
+          "escalation_rate_pct": 4.383561643835616,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      }
+    },
+    "portfolio_profit": -99471.85118493144,
+    "portfolio_carbon": 9208.75,
+    "portfolio_cost": 1072061.9711849315,
+    "portfolio_sl": 0.8972580047497264,
+    "portfolio_stockout": 242,
+    "consolidation": {
+      "total_shipments": 426,
+      "consolidated_shipments": 7,
+      "consolidation_rate_pct": 1.643192488262911,
+      "total_cost_saved": 1215.0,
+      "total_carbon_saved_kg": 25.88,
+      "consolidation_events": 7
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9581,
+          "avg_rolling_sl": 0.9951425595238094,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 43,
+          "n_alerts": 34,
+          "n_retrain_triggers": 9,
+          "min_rolling_sl": 0.5778,
+          "avg_rolling_sl": 0.7782154761904763,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 15,
+          "n_alerts": 8,
+          "n_retrain_triggers": 7,
+          "min_rolling_sl": 0.5899,
+          "avg_rolling_sl": 0.7441208333333333,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 1,
+          "n_alerts": 0,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.8082,
+          "avg_rolling_sl": 0.9834922619047619,
+          "retraining_recommended": false,
+          "policy_stable": false
+        }
+      },
+      "total_drift_events": 59,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.983,
+          "rolling_30d": 0.938,
+          "lead_time_multiplier": 1.008
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.829,
+          "rolling_30d": 0.865,
+          "lead_time_multiplier": 1.086
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.683,
+          "rolling_30d": 0.771,
+          "lead_time_multiplier": 1.158
+        }
+      },
+      "low_reliability_events": 30
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9934859482598176,
+        "profit": 140923.10040410963,
+        "total_cost": 66031.15959589039,
+        "carbon_kgco2e": 1107.5,
+        "stockout_days": 3,
+        "n_orders": 64,
+        "shipping_modes": {
+          "Standard Class": 51,
+          "Second Class": 11,
+          "First Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 346,
+          "escalated": 19,
+          "escalation_rate_pct": 5.205479452054795,
+          "modified_by_human": 16,
+          "modification_rate_pct": 4.383561643835616,
+          "avg_qty_change": -131.25
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.7660533233195644,
+        "profit": -224732.41815068468,
+        "total_cost": 411392.4181506847,
+        "carbon_kgco2e": 2612.5,
+        "stockout_days": 111,
+        "n_orders": 94,
+        "shipping_modes": {
+          "Standard Class": 17,
+          "Second Class": 76,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 361,
+          "escalated": 4,
+          "escalation_rate_pct": 1.095890410958904,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 151189.97260273976,
+        "total_cost": 85494.02739726024,
+        "carbon_kgco2e": 877.5,
+        "stockout_days": 0,
+        "n_orders": 90,
+        "shipping_modes": {
+          "Standard Class": 90
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 319,
+          "escalated": 46,
+          "escalation_rate_pct": 12.602739726027398,
+          "modified_by_human": 8,
+          "modification_rate_pct": 2.191780821917808,
+          "avg_qty_change": -131.25
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7351391328464454,
+        "profit": -214050.29589041107,
+        "total_cost": 396946.2958904111,
+        "carbon_kgco2e": 3561.25,
+        "stockout_days": 129,
+        "n_orders": 82,
+        "shipping_modes": {
+          "Second Class": 78,
+          "First Class": 4
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 358,
+          "escalated": 7,
+          "escalation_rate_pct": 1.9178082191780823,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9921459921459922,
+        "profit": 344.4897260274447,
+        "total_cost": 149980.51027397256,
+        "carbon_kgco2e": 1443.75,
+        "stockout_days": 3,
+        "n_orders": 128,
+        "shipping_modes": {
+          "Standard Class": 125,
+          "Second Class": 3
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 353,
+          "escalated": 12,
+          "escalation_rate_pct": 3.287671232876712,
+          "modified_by_human": 2,
+          "modification_rate_pct": 0.547945205479452,
+          "avg_qty_change": -150.0
+        }
+      }
+    },
+    "portfolio_profit": -146325.15130821892,
+    "portfolio_carbon": 9602.5,
+    "portfolio_cost": 1109844.411308219,
+    "portfolio_sl": 0.8973648793143638,
+    "portfolio_stockout": 246,
+    "consolidation": {
+      "total_shipments": 453,
+      "consolidated_shipments": 5,
+      "consolidation_rate_pct": 1.1037527593818985,
+      "total_cost_saved": 1110.0,
+      "total_carbon_saved_kg": 25.12,
+      "consolidation_events": 5
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9362,
+          "avg_rolling_sl": 0.9933514880952381,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 57,
+          "n_alerts": 49,
+          "n_retrain_triggers": 8,
+          "min_rolling_sl": 0.4993,
+          "avg_rolling_sl": 0.7745934523809526,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 8,
+          "n_alerts": 7,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.5202,
+          "avg_rolling_sl": 0.7237690476190476,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9,
+          "avg_rolling_sl": 0.9962431547619048,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 65,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.918,
+          "rolling_30d": 0.923,
+          "lead_time_multiplier": 1.041
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.808,
+          "rolling_30d": 0.875,
+          "lead_time_multiplier": 1.096
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.778,
+          "rolling_30d": 0.817,
+          "lead_time_multiplier": 1.111
+        }
+      },
+      "low_reliability_events": 26
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9703977798334875,
+        "profit": 103206.84046575343,
+        "total_cost": 100141.8095342466,
+        "carbon_kgco2e": 1167.5,
+        "stockout_days": 15,
+        "n_orders": 61,
+        "shipping_modes": {
+          "Standard Class": 43,
+          "Second Class": 16,
+          "First Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 348,
+          "escalated": 17,
+          "escalation_rate_pct": 4.657534246575342,
+          "modified_by_human": 15,
+          "modification_rate_pct": 4.10958904109589,
+          "avg_qty_change": -131.66666666666666
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.997749155933475,
+        "profit": -79258.22397260275,
+        "total_cost": 322617.72397260275,
+        "carbon_kgco2e": 3303.75,
+        "stockout_days": 1,
+        "n_orders": 184,
+        "shipping_modes": {
+          "Standard Class": 179,
+          "Second Class": 5
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 302,
+          "escalated": 63,
+          "escalation_rate_pct": 17.26027397260274,
+          "modified_by_human": 54,
+          "modification_rate_pct": 14.794520547945206,
+          "avg_qty_change": -144.44444444444446
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 0.9732326698695951,
+        "profit": 112154.15068493146,
+        "total_cost": 111889.84931506854,
+        "carbon_kgco2e": 596.25,
+        "stockout_days": 10,
+        "n_orders": 77,
+        "shipping_modes": {
+          "Standard Class": 76,
+          "Second Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 332,
+          "escalated": 33,
+          "escalation_rate_pct": 9.04109589041096,
+          "modified_by_human": 4,
+          "modification_rate_pct": 1.095890410958904,
+          "avg_qty_change": -137.5
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7553857484809428,
+        "profit": -188958.91232876707,
+        "total_cost": 377673.91232876707,
+        "carbon_kgco2e": 3626.25,
+        "stockout_days": 115,
+        "n_orders": 83,
+        "shipping_modes": {
+          "Second Class": 82,
+          "Standard Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 361,
+          "escalated": 4,
+          "escalation_rate_pct": 1.095890410958904,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.987756063103367,
+        "profit": -6102.56506849319,
+        "total_cost": 152927.5650684932,
+        "carbon_kgco2e": 1472.5,
+        "stockout_days": 5,
+        "n_orders": 142,
+        "shipping_modes": {
+          "Standard Class": 139,
+          "Second Class": 2,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 355,
+          "escalated": 10,
+          "escalation_rate_pct": 2.73972602739726,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      }
+    },
+    "portfolio_profit": -58958.710219178116,
+    "portfolio_carbon": 10166.25,
+    "portfolio_cost": 1065250.8602191783,
+    "portfolio_sl": 0.9369042834441735,
+    "portfolio_stockout": 146,
+    "consolidation": {
+      "total_shipments": 532,
+      "consolidated_shipments": 15,
+      "consolidation_rate_pct": 2.819548872180451,
+      "total_cost_saved": 3690.0,
+      "total_carbon_saved_kg": 46.12,
+      "consolidation_events": 15
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 1,
+          "n_alerts": 0,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.7328,
+          "avg_rolling_sl": 0.9665645833333334,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9708,
+          "avg_rolling_sl": 0.9989773809523809,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 6,
+          "n_alerts": 5,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.6638,
+          "avg_rolling_sl": 0.9705294642857142,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 26,
+          "n_alerts": 21,
+          "n_retrain_triggers": 5,
+          "min_rolling_sl": 0.5716,
+          "avg_rolling_sl": 0.7511627976190477,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 1,
+          "n_alerts": 0,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.8471,
+          "avg_rolling_sl": 0.9932586309523811,
+          "retraining_recommended": false,
+          "policy_stable": false
+        }
+      },
+      "total_drift_events": 34,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.964,
+          "rolling_30d": 0.926,
+          "lead_time_multiplier": 1.018
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.942,
+          "rolling_30d": 0.877,
+          "lead_time_multiplier": 1.029
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.74,
+          "rolling_30d": 0.766,
+          "lead_time_multiplier": 1.13
+        }
+      },
+      "low_reliability_events": 48
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9582879941965905,
+        "profit": 86183.32267123295,
+        "total_cost": 118677.3573287671,
+        "carbon_kgco2e": 980.0,
+        "stockout_days": 18,
+        "n_orders": 71,
+        "shipping_modes": {
+          "Standard Class": 63,
+          "Second Class": 6,
+          "First Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 344,
+          "escalated": 21,
+          "escalation_rate_pct": 5.7534246575342465,
+          "modified_by_human": 19,
+          "modification_rate_pct": 5.205479452054795,
+          "avg_qty_change": -138.1578947368421
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.75,
+        "profit": -256000.75239726016,
+        "total_cost": 443301.25239726016,
+        "carbon_kgco2e": 2610.0,
+        "stockout_days": 108,
+        "n_orders": 89,
+        "shipping_modes": {
+          "Second Class": 77,
+          "Standard Class": 12
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 359,
+          "escalated": 6,
+          "escalation_rate_pct": 1.643835616438356,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 0.9965800273597811,
+        "profit": 133556.45205479456,
+        "total_cost": 96649.54794520544,
+        "carbon_kgco2e": 768.75,
+        "stockout_days": 2,
+        "n_orders": 101,
+        "shipping_modes": {
+          "Standard Class": 101
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 321,
+          "escalated": 44,
+          "escalation_rate_pct": 12.054794520547945,
+          "modified_by_human": 6,
+          "modification_rate_pct": 1.643835616438356,
+          "avg_qty_change": -141.66666666666666
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7294852076359359,
+        "profit": -225941.56164383522,
+        "total_cost": 411390.5616438352,
+        "carbon_kgco2e": 3592.5,
+        "stockout_days": 127,
+        "n_orders": 83,
+        "shipping_modes": {
+          "Second Class": 82,
+          "Standard Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 358,
+          "escalated": 7,
+          "escalation_rate_pct": 1.9178082191780823,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9880514705882353,
+        "profit": 4018.2945205479627,
+        "total_cost": 146481.70547945204,
+        "carbon_kgco2e": 1462.5,
+        "stockout_days": 4,
+        "n_orders": 126,
+        "shipping_modes": {
+          "Second Class": 6,
+          "Standard Class": 120
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 357,
+          "escalated": 8,
+          "escalation_rate_pct": 2.191780821917808,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      }
+    },
+    "portfolio_profit": -258184.2447945199,
+    "portfolio_carbon": 9413.75,
+    "portfolio_cost": 1216500.42479452,
+    "portfolio_sl": 0.8844809399561087,
+    "portfolio_stockout": 259,
+    "consolidation": {
+      "total_shipments": 465,
+      "consolidated_shipments": 5,
+      "consolidation_rate_pct": 1.0752688172043012,
+      "total_cost_saved": 930.0,
+      "total_carbon_saved_kg": 15.0,
+      "consolidation_events": 5
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 2,
+          "n_alerts": 0,
+          "n_retrain_triggers": 2,
+          "min_rolling_sl": 0.7604,
+          "avg_rolling_sl": 0.9573616071428571,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 20,
+          "n_alerts": 13,
+          "n_retrain_triggers": 7,
+          "min_rolling_sl": 0.5171,
+          "avg_rolling_sl": 0.747236011904762,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9588,
+          "avg_rolling_sl": 0.9988380952380952,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 2,
+          "n_alerts": 0,
+          "n_retrain_triggers": 2,
+          "min_rolling_sl": 0.5336,
+          "avg_rolling_sl": 0.7295416666666666,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 8,
+          "n_alerts": 8,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.8587,
+          "avg_rolling_sl": 0.9955449404761906,
+          "retraining_recommended": false,
+          "policy_stable": false
+        }
+      },
+      "total_drift_events": 32,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.857,
+          "rolling_30d": 0.934,
+          "lead_time_multiplier": 1.071
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.955,
+          "rolling_30d": 0.894,
+          "lead_time_multiplier": 1.023
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.763,
+          "rolling_30d": 0.8,
+          "lead_time_multiplier": 1.119
+        }
+      },
+      "low_reliability_events": 40
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9840029761904762,
+        "profit": 126087.17036986302,
+        "total_cost": 79006.12963013703,
+        "carbon_kgco2e": 1098.75,
+        "stockout_days": 8,
+        "n_orders": 62,
+        "shipping_modes": {
+          "Standard Class": 49,
+          "Second Class": 13
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 339,
+          "escalated": 26,
+          "escalation_rate_pct": 7.123287671232877,
+          "modified_by_human": 22,
+          "modification_rate_pct": 6.027397260273973,
+          "avg_qty_change": -138.63636363636363
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.7872605125653147,
+        "profit": -193882.6900684933,
+        "total_cost": 386886.6900684933,
+        "carbon_kgco2e": 2782.5,
+        "stockout_days": 103,
+        "n_orders": 98,
+        "shipping_modes": {
+          "Standard Class": 10,
+          "Second Class": 88
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 362,
+          "escalated": 3,
+          "escalation_rate_pct": 0.821917808219178,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 144303.0684931507,
+        "total_cost": 88746.93150684932,
+        "carbon_kgco2e": 592.5,
+        "stockout_days": 0,
+        "n_orders": 67,
+        "shipping_modes": {
+          "Standard Class": 67
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 329,
+          "escalated": 36,
+          "escalation_rate_pct": 9.863013698630137,
+          "modified_by_human": 7,
+          "modification_rate_pct": 1.9178082191780823,
+          "avg_qty_change": -132.14285714285714
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7080378250591016,
+        "profit": -251466.75890410942,
+        "total_cost": 430567.7589041094,
+        "carbon_kgco2e": 3465.0,
+        "stockout_days": 136,
+        "n_orders": 77,
+        "shipping_modes": {
+          "Second Class": 77
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 360,
+          "escalated": 5,
+          "escalation_rate_pct": 1.36986301369863,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9849863512283894,
+        "profit": 3837.1232876711874,
+        "total_cost": 147712.8767123288,
+        "carbon_kgco2e": 1521.25,
+        "stockout_days": 6,
+        "n_orders": 143,
+        "shipping_modes": {
+          "Standard Class": 135,
+          "First Class": 1,
+          "Second Class": 7
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 358,
+          "escalated": 7,
+          "escalation_rate_pct": 1.9178082191780823,
+          "modified_by_human": 2,
+          "modification_rate_pct": 0.547945205479452,
+          "avg_qty_change": -125.0
+        }
+      }
+    },
+    "portfolio_profit": -171122.08682191782,
+    "portfolio_carbon": 9460.0,
+    "portfolio_cost": 1132920.386821918,
+    "portfolio_sl": 0.8928575330086563,
+    "portfolio_stockout": 253,
+    "consolidation": {
+      "total_shipments": 439,
+      "consolidated_shipments": 8,
+      "consolidation_rate_pct": 1.8223234624145785,
+      "total_cost_saved": 1710.0,
+      "total_carbon_saved_kg": 37.12,
+      "consolidation_events": 8
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 6,
+          "n_alerts": 6,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.8981,
+          "avg_rolling_sl": 0.9826872023809524,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 70,
+          "n_alerts": 61,
+          "n_retrain_triggers": 9,
+          "min_rolling_sl": 0.5147,
+          "avg_rolling_sl": 0.7792672619047619,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 11,
+          "n_alerts": 8,
+          "n_retrain_triggers": 3,
+          "min_rolling_sl": 0.4619,
+          "avg_rolling_sl": 0.7020017857142857,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 26,
+          "n_alerts": 26,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.8883,
+          "avg_rolling_sl": 0.9886860119047618,
+          "retraining_recommended": false,
+          "policy_stable": false
+        }
+      },
+      "total_drift_events": 113,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.947,
+          "rolling_30d": 0.918,
+          "lead_time_multiplier": 1.026
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.928,
+          "rolling_30d": 0.891,
+          "lead_time_multiplier": 1.036
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.754,
+          "rolling_30d": 0.775,
+          "lead_time_multiplier": 1.123
+        }
+      },
+      "low_reliability_events": 31
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9763153136864943,
+        "profit": 116652.67202739732,
+        "total_cost": 92705.32797260268,
+        "carbon_kgco2e": 1110.0,
+        "stockout_days": 12,
+        "n_orders": 66,
+        "shipping_modes": {
+          "Standard Class": 54,
+          "Second Class": 12
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 342,
+          "escalated": 23,
+          "escalation_rate_pct": 6.301369863013699,
+          "modified_by_human": 19,
+          "modification_rate_pct": 5.205479452054795,
+          "avg_qty_change": -138.1578947368421
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.7693282636248415,
+        "profit": -216889.8510273972,
+        "total_cost": 402024.8510273972,
+        "carbon_kgco2e": 2602.5,
+        "stockout_days": 106,
+        "n_orders": 91,
+        "shipping_modes": {
+          "Standard Class": 12,
+          "Second Class": 79
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 359,
+          "escalated": 6,
+          "escalation_rate_pct": 1.643835616438356,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 0.9979409746053535,
+        "profit": 110011.2328767123,
+        "total_cost": 119720.7671232877,
+        "carbon_kgco2e": 753.75,
+        "stockout_days": 1,
+        "n_orders": 95,
+        "shipping_modes": {
+          "Standard Class": 95
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 323,
+          "escalated": 42,
+          "escalation_rate_pct": 11.506849315068493,
+          "modified_by_human": 6,
+          "modification_rate_pct": 1.643835616438356,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.6988776348206953,
+        "profit": -262218.7890410958,
+        "total_cost": 438375.7890410958,
+        "carbon_kgco2e": 3408.75,
+        "stockout_days": 135,
+        "n_orders": 78,
+        "shipping_modes": {
+          "Second Class": 78
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 361,
+          "escalated": 4,
+          "escalation_rate_pct": 1.095890410958904,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 1.0,
+        "profit": 17769.428082191793,
+        "total_cost": 135250.5719178082,
+        "carbon_kgco2e": 1361.25,
+        "stockout_days": 0,
+        "n_orders": 134,
+        "shipping_modes": {
+          "Standard Class": 132,
+          "Second Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 358,
+          "escalated": 7,
+          "escalation_rate_pct": 1.9178082191780823,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      }
+    },
+    "portfolio_profit": -234675.30708219163,
+    "portfolio_carbon": 9236.25,
+    "portfolio_cost": 1188077.3070821916,
+    "portfolio_sl": 0.888492437347477,
+    "portfolio_stockout": 254,
+    "consolidation": {
+      "total_shipments": 457,
+      "consolidated_shipments": 7,
+      "consolidation_rate_pct": 1.5317286652078774,
+      "total_cost_saved": 1710.0,
+      "total_carbon_saved_kg": 37.12,
+      "consolidation_events": 7
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 27,
+          "n_alerts": 27,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.8699,
+          "avg_rolling_sl": 0.9742645833333334,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 32,
+          "n_alerts": 24,
+          "n_retrain_triggers": 8,
+          "min_rolling_sl": 0.3754,
+          "avg_rolling_sl": 0.7634714285714285,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9758,
+          "avg_rolling_sl": 0.9992389880952381,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 8,
+          "n_alerts": 5,
+          "n_retrain_triggers": 3,
+          "min_rolling_sl": 0.4842,
+          "avg_rolling_sl": 0.6977119047619047,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 67,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.989,
+          "rolling_30d": 0.927,
+          "lead_time_multiplier": 1.006
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.921,
+          "rolling_30d": 0.887,
+          "lead_time_multiplier": 1.039
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.869,
+          "rolling_30d": 0.765,
+          "lead_time_multiplier": 1.065
+        }
+      },
+      "low_reliability_events": 33
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9950882299436056,
+        "profit": 150312.5447054795,
+        "total_cost": 61759.35529452054,
+        "carbon_kgco2e": 1012.5,
+        "stockout_days": 4,
+        "n_orders": 65,
+        "shipping_modes": {
+          "Standard Class": 57,
+          "Second Class": 8
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 336,
+          "escalated": 29,
+          "escalation_rate_pct": 7.9452054794520555,
+          "modified_by_human": 24,
+          "modification_rate_pct": 6.575342465753424,
+          "avg_qty_change": -133.33333333333334
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.7565861357290276,
+        "profit": -247246.7479452053,
+        "total_cost": 437322.7479452053,
+        "carbon_kgco2e": 2688.75,
+        "stockout_days": 113,
+        "n_orders": 91,
+        "shipping_modes": {
+          "Second Class": 76,
+          "Standard Class": 15
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 361,
+          "escalated": 4,
+          "escalation_rate_pct": 1.095890410958904,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 182689.9589041096,
+        "total_cost": 49807.04109589041,
+        "carbon_kgco2e": 517.5,
+        "stockout_days": 0,
+        "n_orders": 55,
+        "shipping_modes": {
+          "Standard Class": 55
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 337,
+          "escalated": 28,
+          "escalation_rate_pct": 7.671232876712329,
+          "modified_by_human": 17,
+          "modification_rate_pct": 4.657534246575342,
+          "avg_qty_change": -130.88235294117646
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7294734904270986,
+        "profit": -221603.86849315063,
+        "total_cost": 403878.8684931506,
+        "carbon_kgco2e": 3521.25,
+        "stockout_days": 130,
+        "n_orders": 79,
+        "shipping_modes": {
+          "Second Class": 79
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 360,
+          "escalated": 5,
+          "escalation_rate_pct": 1.36986301369863,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.993607305936073,
+        "profit": 19431.23287671228,
+        "total_cost": 132888.76712328772,
+        "carbon_kgco2e": 1421.25,
+        "stockout_days": 2,
+        "n_orders": 126,
+        "shipping_modes": {
+          "Standard Class": 120,
+          "Second Class": 6
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 357,
+          "escalated": 8,
+          "escalation_rate_pct": 2.191780821917808,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      }
+    },
+    "portfolio_profit": -116416.87995205456,
+    "portfolio_carbon": 9161.25,
+    "portfolio_cost": 1085656.7799520546,
+    "portfolio_sl": 0.8949510324071609,
+    "portfolio_stockout": 249,
+    "consolidation": {
+      "total_shipments": 413,
+      "consolidated_shipments": 3,
+      "consolidation_rate_pct": 0.7263922518159807,
+      "total_cost_saved": 615.0,
+      "total_carbon_saved_kg": 13.88,
+      "consolidation_events": 3
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9414,
+          "avg_rolling_sl": 0.9946809523809524,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 18,
+          "n_alerts": 10,
+          "n_retrain_triggers": 8,
+          "min_rolling_sl": 0.4139,
+          "avg_rolling_sl": 0.7503961309523809,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 18,
+          "n_alerts": 15,
+          "n_retrain_triggers": 3,
+          "min_rolling_sl": 0.4061,
+          "avg_rolling_sl": 0.7278139880952381,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9247,
+          "avg_rolling_sl": 0.9974395833333334,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 36,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.937,
+          "rolling_30d": 0.919,
+          "lead_time_multiplier": 1.032
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.9,
+          "rolling_30d": 0.859,
+          "lead_time_multiplier": 1.05
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.764,
+          "rolling_30d": 0.792,
+          "lead_time_multiplier": 1.118
+        }
+      },
+      "low_reliability_events": 29
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9846125324434557,
+        "profit": 127980.05226712338,
+        "total_cost": 77927.41773287671,
+        "carbon_kgco2e": 1001.25,
+        "stockout_days": 9,
+        "n_orders": 74,
+        "shipping_modes": {
+          "Standard Class": 66,
+          "Second Class": 8
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 342,
+          "escalated": 23,
+          "escalation_rate_pct": 6.301369863013699,
+          "modified_by_human": 19,
+          "modification_rate_pct": 5.205479452054795,
+          "avg_qty_change": -130.26315789473685
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.8223311957751792,
+        "profit": -134376.41541095893,
+        "total_cost": 333846.4154109589,
+        "carbon_kgco2e": 2710.0,
+        "stockout_days": 89,
+        "n_orders": 99,
+        "shipping_modes": {
+          "Second Class": 81,
+          "Standard Class": 17,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 362,
+          "escalated": 3,
+          "escalation_rate_pct": 0.821917808219178,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 178297.31506849316,
+        "total_cost": 50328.68493150685,
+        "carbon_kgco2e": 476.25,
+        "stockout_days": 0,
+        "n_orders": 56,
+        "shipping_modes": {
+          "Standard Class": 56
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 344,
+          "escalated": 21,
+          "escalation_rate_pct": 5.7534246575342465,
+          "modified_by_human": 12,
+          "modification_rate_pct": 3.287671232876712,
+          "avg_qty_change": -137.5
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7267803953425399,
+        "profit": -229087.7890410956,
+        "total_cost": 414283.7890410956,
+        "carbon_kgco2e": 3566.25,
+        "stockout_days": 126,
+        "n_orders": 80,
+        "shipping_modes": {
+          "Second Class": 80
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 359,
+          "escalated": 6,
+          "escalation_rate_pct": 1.643835616438356,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9939981532779316,
+        "profit": 36452.60273972602,
+        "total_cost": 114257.39726027398,
+        "carbon_kgco2e": 1255.0,
+        "stockout_days": 3,
+        "n_orders": 126,
+        "shipping_modes": {
+          "Standard Class": 123,
+          "Second Class": 2,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 347,
+          "escalated": 18,
+          "escalation_rate_pct": 4.931506849315069,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      }
+    },
+    "portfolio_profit": -20734.23437671196,
+    "portfolio_carbon": 9008.75,
+    "portfolio_cost": 990643.7043767121,
+    "portfolio_sl": 0.9055444553678214,
+    "portfolio_stockout": 227,
+    "consolidation": {
+      "total_shipments": 430,
+      "consolidated_shipments": 5,
+      "consolidation_rate_pct": 1.1627906976744187,
+      "total_cost_saved": 1035.0,
+      "total_carbon_saved_kg": 20.25,
+      "consolidation_events": 5
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9157,
+          "avg_rolling_sl": 0.9855907738095239,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 31,
+          "n_alerts": 26,
+          "n_retrain_triggers": 5,
+          "min_rolling_sl": 0.5449,
+          "avg_rolling_sl": 0.813945238095238,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 25,
+          "n_alerts": 19,
+          "n_retrain_triggers": 6,
+          "min_rolling_sl": 0.4255,
+          "avg_rolling_sl": 0.7291544642857143,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9259,
+          "avg_rolling_sl": 0.9975526785714286,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 56,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.815,
+          "rolling_30d": 0.908,
+          "lead_time_multiplier": 1.092
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.837,
+          "rolling_30d": 0.866,
+          "lead_time_multiplier": 1.081
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.714,
+          "rolling_30d": 0.775,
+          "lead_time_multiplier": 1.143
+        }
+      },
+      "low_reliability_events": 34
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9932481751824818,
+        "profit": 145512.28606164394,
+        "total_cost": 65512.82393835617,
+        "carbon_kgco2e": 1047.5,
+        "stockout_days": 4,
+        "n_orders": 66,
+        "shipping_modes": {
+          "Standard Class": 55,
+          "Second Class": 9,
+          "First Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 343,
+          "escalated": 22,
+          "escalation_rate_pct": 6.027397260273973,
+          "modified_by_human": 19,
+          "modification_rate_pct": 5.205479452054795,
+          "avg_qty_change": -132.89473684210526
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.8967863894139887,
+        "profit": -97529.6421232876,
+        "total_cost": 314567.6421232876,
+        "carbon_kgco2e": 3170.0,
+        "stockout_days": 50,
+        "n_orders": 142,
+        "shipping_modes": {
+          "Standard Class": 94,
+          "Second Class": 46,
+          "First Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 342,
+          "escalated": 23,
+          "escalation_rate_pct": 6.301369863013699,
+          "modified_by_human": 20,
+          "modification_rate_pct": 5.47945205479452,
+          "avg_qty_change": -145.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 0.9763912310286678,
+        "profit": 124829.8356164384,
+        "total_cost": 103875.1643835616,
+        "carbon_kgco2e": 701.25,
+        "stockout_days": 9,
+        "n_orders": 76,
+        "shipping_modes": {
+          "Standard Class": 75,
+          "Second Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 330,
+          "escalated": 35,
+          "escalation_rate_pct": 9.58904109589041,
+          "modified_by_human": 8,
+          "modification_rate_pct": 2.191780821917808,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7210242587601078,
+        "profit": -237719.89863013703,
+        "total_cost": 422294.89863013703,
+        "carbon_kgco2e": 3558.75,
+        "stockout_days": 134,
+        "n_orders": 80,
+        "shipping_modes": {
+          "Second Class": 79,
+          "Standard Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 360,
+          "escalated": 5,
+          "escalation_rate_pct": 1.36986301369863,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9892003676470589,
+        "profit": 14156.71575342465,
+        "total_cost": 136518.28424657535,
+        "carbon_kgco2e": 1368.75,
+        "stockout_days": 5,
+        "n_orders": 128,
+        "shipping_modes": {
+          "Standard Class": 126,
+          "Second Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 352,
+          "escalated": 13,
+          "escalation_rate_pct": 3.5616438356164384,
+          "modified_by_human": 2,
+          "modification_rate_pct": 0.547945205479452,
+          "avg_qty_change": -125.0
+        }
+      }
+    },
+    "portfolio_profit": -50750.70332191764,
+    "portfolio_carbon": 9846.25,
+    "portfolio_cost": 1042768.8133219178,
+    "portfolio_sl": 0.915330084406461,
+    "portfolio_stockout": 202,
+    "consolidation": {
+      "total_shipments": 471,
+      "consolidated_shipments": 21,
+      "consolidation_rate_pct": 4.45859872611465,
+      "total_cost_saved": 4890.0,
+      "total_carbon_saved_kg": 65.62,
+      "consolidation_events": 21
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9516,
+          "avg_rolling_sl": 0.9928869047619048,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 32,
+          "n_alerts": 28,
+          "n_retrain_triggers": 4,
+          "min_rolling_sl": 0.5451,
+          "avg_rolling_sl": 0.8958645833333333,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 1,
+          "n_alerts": 0,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.7166,
+          "avg_rolling_sl": 0.9819520833333334,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 5,
+          "n_alerts": 0,
+          "n_retrain_triggers": 5,
+          "min_rolling_sl": 0.5176,
+          "avg_rolling_sl": 0.7189583333333334,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 10,
+          "n_alerts": 10,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.8694,
+          "avg_rolling_sl": 0.9950330357142857,
+          "retraining_recommended": false,
+          "policy_stable": false
+        }
+      },
+      "total_drift_events": 48,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.973,
+          "rolling_30d": 0.933,
+          "lead_time_multiplier": 1.013
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.93,
+          "rolling_30d": 0.877,
+          "lead_time_multiplier": 1.035
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.78,
+          "rolling_30d": 0.776,
+          "lead_time_multiplier": 1.11
+        }
+      },
+      "low_reliability_events": 30
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9826705581904415,
+        "profit": 126012.45076712348,
+        "total_cost": 82841.53923287663,
+        "carbon_kgco2e": 1132.5,
+        "stockout_days": 12,
+        "n_orders": 65,
+        "shipping_modes": {
+          "Standard Class": 50,
+          "Second Class": 12,
+          "First Class": 3
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 342,
+          "escalated": 23,
+          "escalation_rate_pct": 6.301369863013699,
+          "modified_by_human": 21,
+          "modification_rate_pct": 5.7534246575342465,
+          "avg_qty_change": -134.52380952380952
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.9146714212939379,
+        "profit": -99891.4856164382,
+        "total_cost": 318942.4856164382,
+        "carbon_kgco2e": 3128.75,
+        "stockout_days": 41,
+        "n_orders": 154,
+        "shipping_modes": {
+          "Standard Class": 113,
+          "Second Class": 36,
+          "First Class": 5
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 330,
+          "escalated": 35,
+          "escalation_rate_pct": 9.58904109589041,
+          "modified_by_human": 24,
+          "modification_rate_pct": 6.575342465753424,
+          "avg_qty_change": -143.75
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 104035.93150684929,
+        "total_cost": 120719.06849315071,
+        "carbon_kgco2e": 862.5,
+        "stockout_days": 0,
+        "n_orders": 96,
+        "shipping_modes": {
+          "Standard Class": 94,
+          "Second Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 320,
+          "escalated": 45,
+          "escalation_rate_pct": 12.32876712328767,
+          "modified_by_human": 5,
+          "modification_rate_pct": 1.36986301369863,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7497721057429353,
+        "profit": -197941.1178082191,
+        "total_cost": 387116.1178082191,
+        "carbon_kgco2e": 3645.0,
+        "stockout_days": 121,
+        "n_orders": 81,
+        "shipping_modes": {
+          "Second Class": 81
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 358,
+          "escalated": 7,
+          "escalation_rate_pct": 1.9178082191780823,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9926042133572389,
+        "profit": 14867.452054794529,
+        "total_cost": 140147.54794520547,
+        "carbon_kgco2e": 1428.75,
+        "stockout_days": 3,
+        "n_orders": 131,
+        "shipping_modes": {
+          "Standard Class": 127,
+          "Second Class": 4
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 352,
+          "escalated": 13,
+          "escalation_rate_pct": 3.5616438356164384,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      }
+    },
+    "portfolio_profit": -52916.76909589002,
+    "portfolio_carbon": 10197.5,
+    "portfolio_cost": 1049766.7590958902,
+    "portfolio_sl": 0.9279436597169107,
+    "portfolio_stockout": 177,
+    "consolidation": {
+      "total_shipments": 514,
+      "consolidated_shipments": 13,
+      "consolidation_rate_pct": 2.529182879377432,
+      "total_cost_saved": 3135.0,
+      "total_carbon_saved_kg": 45.38,
+      "consolidation_events": 13
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 21,
+          "n_alerts": 21,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.8875,
+          "avg_rolling_sl": 0.9808574404761904,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 34,
+          "n_alerts": 30,
+          "n_retrain_triggers": 4,
+          "min_rolling_sl": 0.562,
+          "avg_rolling_sl": 0.910958630952381,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 17,
+          "n_alerts": 10,
+          "n_retrain_triggers": 7,
+          "min_rolling_sl": 0.5519,
+          "avg_rolling_sl": 0.7475991071428572,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9088,
+          "avg_rolling_sl": 0.9922011904761904,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 72,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.982,
+          "rolling_30d": 0.928,
+          "lead_time_multiplier": 1.009
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.749,
+          "rolling_30d": 0.872,
+          "lead_time_multiplier": 1.126
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.713,
+          "rolling_30d": 0.789,
+          "lead_time_multiplier": 1.144
+        }
+      },
+      "low_reliability_events": 29
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9970490593876798,
+        "profit": 149779.7032397261,
+        "total_cost": 59810.916760274005,
+        "carbon_kgco2e": 1031.25,
+        "stockout_days": 4,
+        "n_orders": 70,
+        "shipping_modes": {
+          "Standard Class": 61,
+          "Second Class": 9
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 337,
+          "escalated": 28,
+          "escalation_rate_pct": 7.671232876712329,
+          "modified_by_human": 19,
+          "modification_rate_pct": 5.205479452054795,
+          "avg_qty_change": -135.52631578947367
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.9167292762334085,
+        "profit": -93641.59212328773,
+        "total_cost": 316932.09212328773,
+        "carbon_kgco2e": 3161.25,
+        "stockout_days": 45,
+        "n_orders": 154,
+        "shipping_modes": {
+          "Standard Class": 119,
+          "Second Class": 35
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 325,
+          "escalated": 40,
+          "escalation_rate_pct": 10.95890410958904,
+          "modified_by_human": 25,
+          "modification_rate_pct": 6.8493150684931505,
+          "avg_qty_change": -143.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 160092.69863013696,
+        "total_cost": 70982.30136986305,
+        "carbon_kgco2e": 551.25,
+        "stockout_days": 0,
+        "n_orders": 70,
+        "shipping_modes": {
+          "Standard Class": 70
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 340,
+          "escalated": 25,
+          "escalation_rate_pct": 6.8493150684931505,
+          "modified_by_human": 5,
+          "modification_rate_pct": 1.36986301369863,
+          "avg_qty_change": -135.0
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7175406871609403,
+        "profit": -240595.14246575336,
+        "total_cost": 423123.14246575336,
+        "carbon_kgco2e": 3521.25,
+        "stockout_days": 132,
+        "n_orders": 79,
+        "shipping_modes": {
+          "Second Class": 79
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 359,
+          "escalated": 6,
+          "escalation_rate_pct": 1.643835616438356,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9970588235294118,
+        "profit": 15584.883561643801,
+        "total_cost": 138660.1164383562,
+        "carbon_kgco2e": 1508.75,
+        "stockout_days": 3,
+        "n_orders": 137,
+        "shipping_modes": {
+          "Standard Class": 130,
+          "Second Class": 5,
+          "First Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 356,
+          "escalated": 9,
+          "escalation_rate_pct": 2.4657534246575343,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      }
+    },
+    "portfolio_profit": -8779.449157534225,
+    "portfolio_carbon": 9773.75,
+    "portfolio_cost": 1009508.5691575344,
+    "portfolio_sl": 0.9256755692622882,
+    "portfolio_stockout": 184,
+    "consolidation": {
+      "total_shipments": 485,
+      "consolidated_shipments": 25,
+      "consolidation_rate_pct": 5.154639175257731,
+      "total_cost_saved": 5520.0,
+      "total_carbon_saved_kg": 74.62,
+      "consolidation_events": 25
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9742,
+          "avg_rolling_sl": 0.9967568452380953,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 26,
+          "n_alerts": 24,
+          "n_retrain_triggers": 2,
+          "min_rolling_sl": 0.5403,
+          "avg_rolling_sl": 0.9184056547619047,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 25,
+          "n_alerts": 23,
+          "n_retrain_triggers": 2,
+          "min_rolling_sl": 0.4497,
+          "avg_rolling_sl": 0.7129785714285715,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9642,
+          "avg_rolling_sl": 0.9985309523809524,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 51,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.926,
+          "rolling_30d": 0.921,
+          "lead_time_multiplier": 1.037
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.916,
+          "rolling_30d": 0.884,
+          "lead_time_multiplier": 1.042
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.818,
+          "rolling_30d": 0.816,
+          "lead_time_multiplier": 1.091
+        }
+      },
+      "low_reliability_events": 26
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9843948466702958,
+        "profit": 128410.88982191787,
+        "total_cost": 81916.36017808213,
+        "carbon_kgco2e": 1203.75,
+        "stockout_days": 8,
+        "n_orders": 72,
+        "shipping_modes": {
+          "Standard Class": 54,
+          "Second Class": 15,
+          "First Class": 3
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 334,
+          "escalated": 31,
+          "escalation_rate_pct": 8.493150684931507,
+          "modified_by_human": 22,
+          "modification_rate_pct": 6.027397260273973,
+          "avg_qty_change": -140.9090909090909
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.7848880137829191,
+        "profit": -197502.53972602746,
+        "total_cost": 392031.53972602746,
+        "carbon_kgco2e": 2673.75,
+        "stockout_days": 100,
+        "n_orders": 96,
+        "shipping_modes": {
+          "Standard Class": 13,
+          "Second Class": 83
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 362,
+          "escalated": 3,
+          "escalation_rate_pct": 0.821917808219178,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 4993.602739726077,
+        "total_cost": 219050.39726027392,
+        "carbon_kgco2e": 1136.25,
+        "stockout_days": 0,
+        "n_orders": 146,
+        "shipping_modes": {
+          "Standard Class": 146
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 304,
+          "escalated": 61,
+          "escalation_rate_pct": 16.71232876712329,
+          "modified_by_human": 5,
+          "modification_rate_pct": 1.36986301369863,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7577820128868319,
+        "profit": -189168.52876712318,
+        "total_cost": 381218.5287671232,
+        "carbon_kgco2e": 3705.0,
+        "stockout_days": 118,
+        "n_orders": 87,
+        "shipping_modes": {
+          "Second Class": 86,
+          "Standard Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 362,
+          "escalated": 3,
+          "escalation_rate_pct": 0.821917808219178,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 1.0,
+        "profit": 40147.04452054796,
+        "total_cost": 111437.95547945204,
+        "carbon_kgco2e": 1162.5,
+        "stockout_days": 0,
+        "n_orders": 110,
+        "shipping_modes": {
+          "Standard Class": 110
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 344,
+          "escalated": 21,
+          "escalation_rate_pct": 5.7534246575342465,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      }
+    },
+    "portfolio_profit": -213119.53141095873,
+    "portfolio_carbon": 9881.25,
+    "portfolio_cost": 1185654.7814109586,
+    "portfolio_sl": 0.9054129746680093,
+    "portfolio_stockout": 226,
+    "consolidation": {
+      "total_shipments": 506,
+      "consolidated_shipments": 5,
+      "consolidation_rate_pct": 0.9881422924901186,
+      "total_cost_saved": 1335.0,
+      "total_carbon_saved_kg": 31.88,
+      "consolidation_events": 5
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9227,
+          "avg_rolling_sl": 0.9890294642857143,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 39,
+          "n_alerts": 33,
+          "n_retrain_triggers": 6,
+          "min_rolling_sl": 0.5141,
+          "avg_rolling_sl": 0.7852270833333334,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 17,
+          "n_alerts": 13,
+          "n_retrain_triggers": 4,
+          "min_rolling_sl": 0.5087,
+          "avg_rolling_sl": 0.7615157738095237,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 56,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.968,
+          "rolling_30d": 0.919,
+          "lead_time_multiplier": 1.016
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.906,
+          "rolling_30d": 0.886,
+          "lead_time_multiplier": 1.047
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.781,
+          "rolling_30d": 0.778,
+          "lead_time_multiplier": 1.109
+        }
+      },
+      "low_reliability_events": 37
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.96718322698268,
+        "profit": 99239.87059589055,
+        "total_cost": 106434.97940410954,
+        "carbon_kgco2e": 1183.75,
+        "stockout_days": 13,
+        "n_orders": 63,
+        "shipping_modes": {
+          "Standard Class": 46,
+          "Second Class": 13,
+          "First Class": 4
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 339,
+          "escalated": 26,
+          "escalation_rate_pct": 7.123287671232877,
+          "modified_by_human": 20,
+          "modification_rate_pct": 5.47945205479452,
+          "avg_qty_change": -135.0
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.8874361847839621,
+        "profit": -112539.47705479426,
+        "total_cost": 329912.97705479426,
+        "carbon_kgco2e": 2852.5,
+        "stockout_days": 54,
+        "n_orders": 136,
+        "shipping_modes": {
+          "Standard Class": 99,
+          "Second Class": 36,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 332,
+          "escalated": 33,
+          "escalation_rate_pct": 9.04109589041096,
+          "modified_by_human": 24,
+          "modification_rate_pct": 6.575342465753424,
+          "avg_qty_change": -147.91666666666666
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 175480.95890410955,
+        "total_cost": 54330.041095890454,
+        "carbon_kgco2e": 472.5,
+        "stockout_days": 0,
+        "n_orders": 63,
+        "shipping_modes": {
+          "Standard Class": 63
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 344,
+          "escalated": 21,
+          "escalation_rate_pct": 5.7534246575342465,
+          "modified_by_human": 10,
+          "modification_rate_pct": 2.73972602739726,
+          "avg_qty_change": -130.0
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7628505747126437,
+        "profit": -180661.67671232898,
+        "total_cost": 371469.676712329,
+        "carbon_kgco2e": 3701.25,
+        "stockout_days": 122,
+        "n_orders": 83,
+        "shipping_modes": {
+          "Second Class": 83
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 354,
+          "escalated": 11,
+          "escalation_rate_pct": 3.0136986301369864,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9901893680127767,
+        "profit": 4279.633561643801,
+        "total_cost": 147620.3664383562,
+        "carbon_kgco2e": 1476.25,
+        "stockout_days": 5,
+        "n_orders": 135,
+        "shipping_modes": {
+          "Second Class": 2,
+          "First Class": 1,
+          "Standard Class": 132
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 359,
+          "escalated": 6,
+          "escalation_rate_pct": 1.643835616438356,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      }
+    },
+    "portfolio_profit": -14200.690705479341,
+    "portfolio_carbon": 9686.25,
+    "portfolio_cost": 1009768.0407054794,
+    "portfolio_sl": 0.9215318708984125,
+    "portfolio_stockout": 194,
+    "consolidation": {
+      "total_shipments": 463,
+      "consolidated_shipments": 17,
+      "consolidation_rate_pct": 3.6717062634989204,
+      "total_cost_saved": 3855.0,
+      "total_carbon_saved_kg": 57.75,
+      "consolidation_events": 17
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 1,
+          "n_alerts": 0,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.7081,
+          "avg_rolling_sl": 0.9671136904761904,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 9,
+          "n_alerts": 6,
+          "n_retrain_triggers": 3,
+          "min_rolling_sl": 0.5189,
+          "avg_rolling_sl": 0.8820639880952382,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 38,
+          "n_alerts": 34,
+          "n_retrain_triggers": 4,
+          "min_rolling_sl": 0.4673,
+          "avg_rolling_sl": 0.7590056547619047,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 9,
+          "n_alerts": 9,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.8728,
+          "avg_rolling_sl": 0.9955294642857143,
+          "retraining_recommended": false,
+          "policy_stable": false
+        }
+      },
+      "total_drift_events": 57,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.944,
+          "rolling_30d": 0.927,
+          "lead_time_multiplier": 1.028
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.93,
+          "rolling_30d": 0.888,
+          "lead_time_multiplier": 1.035
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.93,
+          "rolling_30d": 0.74,
+          "lead_time_multiplier": 1.035
+        }
+      },
+      "low_reliability_events": 35
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9705775517617145,
+        "profit": 104837.57441780824,
+        "total_cost": 102349.30558219177,
+        "carbon_kgco2e": 1138.75,
+        "stockout_days": 13,
+        "n_orders": 61,
+        "shipping_modes": {
+          "Standard Class": 47,
+          "Second Class": 13,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 349,
+          "escalated": 16,
+          "escalation_rate_pct": 4.383561643835616,
+          "modified_by_human": 15,
+          "modification_rate_pct": 4.10958904109589,
+          "avg_qty_change": -145.0
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.7789696894100038,
+        "profit": -205370.89486301376,
+        "total_cost": 395843.39486301376,
+        "carbon_kgco2e": 2655.0,
+        "stockout_days": 108,
+        "n_orders": 101,
+        "shipping_modes": {
+          "Standard Class": 16,
+          "Second Class": 85
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 359,
+          "escalated": 6,
+          "escalation_rate_pct": 1.643835616438356,
+          "modified_by_human": 2,
+          "modification_rate_pct": 0.547945205479452,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 150343.53424657538,
+        "total_cost": 82627.4657534246,
+        "carbon_kgco2e": 555.0,
+        "stockout_days": 0,
+        "n_orders": 63,
+        "shipping_modes": {
+          "Standard Class": 63
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 339,
+          "escalated": 26,
+          "escalation_rate_pct": 7.123287671232877,
+          "modified_by_human": 5,
+          "modification_rate_pct": 1.36986301369863,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7481467923492267,
+        "profit": -199623.03561643878,
+        "total_cost": 387648.0356164388,
+        "carbon_kgco2e": 3633.75,
+        "stockout_days": 120,
+        "n_orders": 83,
+        "shipping_modes": {
+          "Second Class": 83
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 359,
+          "escalated": 6,
+          "escalation_rate_pct": 1.643835616438356,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9915447897623401,
+        "profit": -3808.318493150611,
+        "total_cost": 155673.3184931506,
+        "carbon_kgco2e": 1541.25,
+        "stockout_days": 4,
+        "n_orders": 124,
+        "shipping_modes": {
+          "Second Class": 4,
+          "Standard Class": 120
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 359,
+          "escalated": 6,
+          "escalation_rate_pct": 1.643835616438356,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -175.0
+        }
+      }
+    },
+    "portfolio_profit": -153621.14030821953,
+    "portfolio_carbon": 9523.75,
+    "portfolio_cost": 1124141.5203082196,
+    "portfolio_sl": 0.897847764656657,
+    "portfolio_stockout": 245,
+    "consolidation": {
+      "total_shipments": 427,
+      "consolidated_shipments": 5,
+      "consolidation_rate_pct": 1.1709601873536302,
+      "total_cost_saved": 1365.0,
+      "total_carbon_saved_kg": 30.0,
+      "consolidation_events": 5
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 15,
+          "n_alerts": 14,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.8371,
+          "avg_rolling_sl": 0.9687497023809523,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 43,
+          "n_alerts": 39,
+          "n_retrain_triggers": 4,
+          "min_rolling_sl": 0.4844,
+          "avg_rolling_sl": 0.7865232142857143,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 20,
+          "n_alerts": 16,
+          "n_retrain_triggers": 4,
+          "min_rolling_sl": 0.5912,
+          "avg_rolling_sl": 0.7509032738095238,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.8984,
+          "avg_rolling_sl": 0.9967458333333334,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 78,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.981,
+          "rolling_30d": 0.914,
+          "lead_time_multiplier": 1.009
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.9,
+          "rolling_30d": 0.901,
+          "lead_time_multiplier": 1.05
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.887,
+          "rolling_30d": 0.777,
+          "lead_time_multiplier": 1.057
+        }
+      },
+      "low_reliability_events": 35
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9778225806451613,
+        "profit": 117465.80945890414,
+        "total_cost": 89372.14054109593,
+        "carbon_kgco2e": 1131.25,
+        "stockout_days": 10,
+        "n_orders": 63,
+        "shipping_modes": {
+          "Standard Class": 48,
+          "Second Class": 14,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 345,
+          "escalated": 20,
+          "escalation_rate_pct": 5.47945205479452,
+          "modified_by_human": 15,
+          "modification_rate_pct": 4.10958904109589,
+          "avg_qty_change": -128.33333333333334
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.788676923076923,
+        "profit": -192425.66643835633,
+        "total_cost": 387869.66643835633,
+        "carbon_kgco2e": 2737.5,
+        "stockout_days": 100,
+        "n_orders": 98,
+        "shipping_modes": {
+          "Second Class": 83,
+          "Standard Class": 15
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 361,
+          "escalated": 4,
+          "escalation_rate_pct": 1.095890410958904,
+          "modified_by_human": 2,
+          "modification_rate_pct": 0.547945205479452,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 0.9976973684210526,
+        "profit": 134246.43835616444,
+        "total_cost": 105360.56164383555,
+        "carbon_kgco2e": 622.5,
+        "stockout_days": 1,
+        "n_orders": 73,
+        "shipping_modes": {
+          "Standard Class": 73
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 329,
+          "escalated": 36,
+          "escalation_rate_pct": 9.863013698630137,
+          "modified_by_human": 6,
+          "modification_rate_pct": 1.643835616438356,
+          "avg_qty_change": -133.33333333333334
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7625964593735814,
+        "profit": -182929.70410958916,
+        "total_cost": 376129.70410958916,
+        "carbon_kgco2e": 3735.0,
+        "stockout_days": 114,
+        "n_orders": 83,
+        "shipping_modes": {
+          "Second Class": 83
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 362,
+          "escalated": 3,
+          "escalation_rate_pct": 0.821917808219178,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9863945578231292,
+        "profit": 11098.61986301362,
+        "total_cost": 141151.38013698638,
+        "carbon_kgco2e": 1395.0,
+        "stockout_days": 5,
+        "n_orders": 118,
+        "shipping_modes": {
+          "Standard Class": 113,
+          "Second Class": 5
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 352,
+          "escalated": 13,
+          "escalation_rate_pct": 3.5616438356164384,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -175.0
+        }
+      }
+    },
+    "portfolio_profit": -112544.5028698633,
+    "portfolio_carbon": 9621.25,
+    "portfolio_cost": 1099883.4528698632,
+    "portfolio_sl": 0.9026375778679696,
+    "portfolio_stockout": 230,
+    "consolidation": {
+      "total_shipments": 426,
+      "consolidated_shipments": 9,
+      "consolidation_rate_pct": 2.112676056338028,
+      "total_cost_saved": 1890.0,
+      "total_carbon_saved_kg": 45.0,
+      "consolidation_events": 9
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 1,
+          "n_alerts": 0,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.7807,
+          "avg_rolling_sl": 0.9753041666666666,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 22,
+          "n_alerts": 16,
+          "n_retrain_triggers": 6,
+          "min_rolling_sl": 0.5312,
+          "avg_rolling_sl": 0.7869005952380952,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9724,
+          "avg_rolling_sl": 0.9992,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 23,
+          "n_alerts": 20,
+          "n_retrain_triggers": 3,
+          "min_rolling_sl": 0.5631,
+          "avg_rolling_sl": 0.7574092261904761,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 1,
+          "n_alerts": 0,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.8365,
+          "avg_rolling_sl": 0.9932714285714285,
+          "retraining_recommended": false,
+          "policy_stable": false
+        }
+      },
+      "total_drift_events": 47,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.978,
+          "rolling_30d": 0.936,
+          "lead_time_multiplier": 1.011
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.885,
+          "rolling_30d": 0.894,
+          "lead_time_multiplier": 1.058
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.838,
+          "rolling_30d": 0.772,
+          "lead_time_multiplier": 1.081
+        }
+      },
+      "low_reliability_events": 41
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9907715023994094,
+        "profit": 139567.25734246586,
+        "total_cost": 68550.10265753424,
+        "carbon_kgco2e": 993.75,
+        "stockout_days": 4,
+        "n_orders": 67,
+        "shipping_modes": {
+          "Standard Class": 59,
+          "Second Class": 8
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 332,
+          "escalated": 33,
+          "escalation_rate_pct": 9.04109589041096,
+          "modified_by_human": 25,
+          "modification_rate_pct": 6.8493150684931505,
+          "avg_qty_change": -147.0
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.8154963074227062,
+        "profit": -147041.70993150654,
+        "total_cost": 345749.20993150654,
+        "carbon_kgco2e": 2790.0,
+        "stockout_days": 91,
+        "n_orders": 99,
+        "shipping_modes": {
+          "Standard Class": 15,
+          "Second Class": 84
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 363,
+          "escalated": 2,
+          "escalation_rate_pct": 0.547945205479452,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 0.9812797821647379,
+        "profit": 127748.5479452055,
+        "total_cost": 100008.4520547945,
+        "carbon_kgco2e": 656.25,
+        "stockout_days": 8,
+        "n_orders": 80,
+        "shipping_modes": {
+          "Standard Class": 78,
+          "Second Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 326,
+          "escalated": 39,
+          "escalation_rate_pct": 10.684931506849315,
+          "modified_by_human": 7,
+          "modification_rate_pct": 1.9178082191780823,
+          "avg_qty_change": -132.14285714285714
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7470935596973611,
+        "profit": -199263.77534246532,
+        "total_cost": 385494.7753424653,
+        "carbon_kgco2e": 3592.5,
+        "stockout_days": 127,
+        "n_orders": 83,
+        "shipping_modes": {
+          "Second Class": 82,
+          "Standard Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 364,
+          "escalated": 1,
+          "escalation_rate_pct": 0.273972602739726,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9882623705408515,
+        "profit": 2179.517123287602,
+        "total_cost": 148110.4828767124,
+        "carbon_kgco2e": 1511.25,
+        "stockout_days": 4,
+        "n_orders": 129,
+        "shipping_modes": {
+          "Second Class": 4,
+          "Standard Class": 125
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 357,
+          "escalated": 8,
+          "escalation_rate_pct": 2.191780821917808,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      }
+    },
+    "portfolio_profit": -76810.1628630129,
+    "portfolio_carbon": 9543.75,
+    "portfolio_cost": 1047913.022863013,
+    "portfolio_sl": 0.9045807044450133,
+    "portfolio_stockout": 234,
+    "consolidation": {
+      "total_shipments": 453,
+      "consolidated_shipments": 5,
+      "consolidation_rate_pct": 1.1037527593818985,
+      "total_cost_saved": 810.0,
+      "total_carbon_saved_kg": 15.75,
+      "consolidation_events": 5
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9329,
+          "avg_rolling_sl": 0.9900589285714286,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 40,
+          "n_alerts": 31,
+          "n_retrain_triggers": 9,
+          "min_rolling_sl": 0.5859,
+          "avg_rolling_sl": 0.8116729166666667,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 1,
+          "n_alerts": 0,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.7923,
+          "avg_rolling_sl": 0.9858023809523809,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 24,
+          "n_alerts": 19,
+          "n_retrain_triggers": 5,
+          "min_rolling_sl": 0.5171,
+          "avg_rolling_sl": 0.7411720238095237,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 8,
+          "n_alerts": 8,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.8464,
+          "avg_rolling_sl": 0.9950303571428571,
+          "retraining_recommended": false,
+          "policy_stable": false
+        }
+      },
+      "total_drift_events": 73,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.92,
+          "rolling_30d": 0.911,
+          "lead_time_multiplier": 1.04
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.782,
+          "rolling_30d": 0.857,
+          "lead_time_multiplier": 1.109
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.966,
+          "rolling_30d": 0.799,
+          "lead_time_multiplier": 1.017
+        }
+      },
+      "low_reliability_events": 21
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9389326334208224,
+        "profit": 49174.667513698776,
+        "total_cost": 158865.1524863013,
+        "carbon_kgco2e": 1358.75,
+        "stockout_days": 24,
+        "n_orders": 71,
+        "shipping_modes": {
+          "Standard Class": 49,
+          "Second Class": 20,
+          "First Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 340,
+          "escalated": 25,
+          "escalation_rate_pct": 6.8493150684931505,
+          "modified_by_human": 19,
+          "modification_rate_pct": 5.205479452054795,
+          "avg_qty_change": -130.26315789473685
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.8685428392745466,
+        "profit": -63233.79520547937,
+        "total_cost": 275025.7952054794,
+        "carbon_kgco2e": 2928.75,
+        "stockout_days": 69,
+        "n_orders": 110,
+        "shipping_modes": {
+          "Standard Class": 23,
+          "Second Class": 87
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 365,
+          "escalated": 0,
+          "escalation_rate_pct": 0.0,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 167284.08219178085,
+        "total_cost": 59840.917808219136,
+        "carbon_kgco2e": 536.25,
+        "stockout_days": 0,
+        "n_orders": 60,
+        "shipping_modes": {
+          "Standard Class": 60
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 331,
+          "escalated": 34,
+          "escalation_rate_pct": 9.315068493150685,
+          "modified_by_human": 11,
+          "modification_rate_pct": 3.0136986301369864,
+          "avg_qty_change": -129.54545454545453
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.707504925667204,
+        "profit": -255817.67123287683,
+        "total_cost": 437517.67123287683,
+        "carbon_kgco2e": 3510.0,
+        "stockout_days": 140,
+        "n_orders": 78,
+        "shipping_modes": {
+          "Second Class": 78
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 360,
+          "escalated": 5,
+          "escalation_rate_pct": 1.36986301369863,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9891205802357208,
+        "profit": -1158.5376712329162,
+        "total_cost": 153898.53767123292,
+        "carbon_kgco2e": 1518.75,
+        "stockout_days": 6,
+        "n_orders": 129,
+        "shipping_modes": {
+          "Standard Class": 124,
+          "Second Class": 5
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 354,
+          "escalated": 11,
+          "escalation_rate_pct": 3.0136986301369864,
+          "modified_by_human": 3,
+          "modification_rate_pct": 0.821917808219178,
+          "avg_qty_change": -158.33333333333334
+        }
+      }
+    },
+    "portfolio_profit": -103751.2544041095,
+    "portfolio_carbon": 9852.5,
+    "portfolio_cost": 1085148.0744041095,
+    "portfolio_sl": 0.9008201957196589,
+    "portfolio_stockout": 239,
+    "consolidation": {
+      "total_shipments": 438,
+      "consolidated_shipments": 10,
+      "consolidation_rate_pct": 2.28310502283105,
+      "total_cost_saved": 2325.0,
+      "total_carbon_saved_kg": 54.38,
+      "consolidation_events": 10
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 2,
+          "n_alerts": 0,
+          "n_retrain_triggers": 2,
+          "min_rolling_sl": 0.6106,
+          "avg_rolling_sl": 0.9386571428571429,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 55,
+          "n_alerts": 45,
+          "n_retrain_triggers": 10,
+          "min_rolling_sl": 0.704,
+          "avg_rolling_sl": 0.866361011904762,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 17,
+          "n_alerts": 12,
+          "n_retrain_triggers": 5,
+          "min_rolling_sl": 0.4354,
+          "avg_rolling_sl": 0.7035931547619048,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 9,
+          "n_alerts": 9,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.8621,
+          "avg_rolling_sl": 0.9950363095238095,
+          "retraining_recommended": false,
+          "policy_stable": false
+        }
+      },
+      "total_drift_events": 83,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.908,
+          "rolling_30d": 0.926,
+          "lead_time_multiplier": 1.046
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.946,
+          "rolling_30d": 0.884,
+          "lead_time_multiplier": 1.027
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.891,
+          "rolling_30d": 0.768,
+          "lead_time_multiplier": 1.054
+        }
+      },
+      "low_reliability_events": 38
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9977802441731409,
+        "profit": 152390.05789041094,
+        "total_cost": 56735.322109589055,
+        "carbon_kgco2e": 941.25,
+        "stockout_days": 1,
+        "n_orders": 68,
+        "shipping_modes": {
+          "Standard Class": 62,
+          "Second Class": 6
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 340,
+          "escalated": 25,
+          "escalation_rate_pct": 6.8493150684931505,
+          "modified_by_human": 18,
+          "modification_rate_pct": 4.931506849315069,
+          "avg_qty_change": -136.11111111111111
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.8272704465629704,
+        "profit": -127007.42876712303,
+        "total_cost": 328154.928767123,
+        "carbon_kgco2e": 2726.25,
+        "stockout_days": 91,
+        "n_orders": 101,
+        "shipping_modes": {
+          "Second Class": 83,
+          "Standard Class": 18
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 364,
+          "escalated": 1,
+          "escalation_rate_pct": 0.273972602739726,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 0.9873331051009928,
+        "profit": 153389.15068493146,
+        "total_cost": 74446.84931506854,
+        "carbon_kgco2e": 581.25,
+        "stockout_days": 6,
+        "n_orders": 71,
+        "shipping_modes": {
+          "Standard Class": 71
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 333,
+          "escalated": 32,
+          "escalation_rate_pct": 8.767123287671232,
+          "modified_by_human": 11,
+          "modification_rate_pct": 3.0136986301369864,
+          "avg_qty_change": -129.54545454545453
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7061117156329344,
+        "profit": -254026.92876712343,
+        "total_cost": 433127.92876712343,
+        "carbon_kgco2e": 3442.5,
+        "stockout_days": 139,
+        "n_orders": 78,
+        "shipping_modes": {
+          "Second Class": 78
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 357,
+          "escalated": 8,
+          "escalation_rate_pct": 2.191780821917808,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9930020993701889,
+        "profit": 9115.38356164386,
+        "total_cost": 139879.61643835614,
+        "carbon_kgco2e": 1410.0,
+        "stockout_days": 2,
+        "n_orders": 121,
+        "shipping_modes": {
+          "Standard Class": 116,
+          "Second Class": 5
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 359,
+          "escalated": 6,
+          "escalation_rate_pct": 1.643835616438356,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -175.0
+        }
+      }
+    },
+    "portfolio_profit": -66139.7653972602,
+    "portfolio_carbon": 9101.25,
+    "portfolio_cost": 1032344.6453972602,
+    "portfolio_sl": 0.9022995221680455,
+    "portfolio_stockout": 239,
+    "consolidation": {
+      "total_shipments": 435,
+      "consolidated_shipments": 4,
+      "consolidation_rate_pct": 0.9195402298850575,
+      "total_cost_saved": 1260.0,
+      "total_carbon_saved_kg": 28.12,
+      "consolidation_events": 4
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9702,
+          "avg_rolling_sl": 0.9974547619047618,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 66,
+          "n_alerts": 59,
+          "n_retrain_triggers": 7,
+          "min_rolling_sl": 0.6067,
+          "avg_rolling_sl": 0.8297241071428572,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 10,
+          "n_alerts": 9,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.8398,
+          "avg_rolling_sl": 0.9864770833333333,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 30,
+          "n_alerts": 25,
+          "n_retrain_triggers": 5,
+          "min_rolling_sl": 0.3344,
+          "avg_rolling_sl": 0.6921369047619047,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9204,
+          "avg_rolling_sl": 0.9980556547619047,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 106,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.973,
+          "rolling_30d": 0.914,
+          "lead_time_multiplier": 1.013
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.797,
+          "rolling_30d": 0.862,
+          "lead_time_multiplier": 1.102
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.699,
+          "rolling_30d": 0.781,
+          "lead_time_multiplier": 1.15
+        }
+      },
+      "low_reliability_events": 28
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9780836804926644,
+        "profit": 118176.59355479453,
+        "total_cost": 91181.40644520547,
+        "carbon_kgco2e": 1178.75,
+        "stockout_days": 10,
+        "n_orders": 61,
+        "shipping_modes": {
+          "Standard Class": 45,
+          "Second Class": 14,
+          "First Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 341,
+          "escalated": 24,
+          "escalation_rate_pct": 6.575342465753424,
+          "modified_by_human": 21,
+          "modification_rate_pct": 5.7534246575342465,
+          "avg_qty_change": -141.66666666666666
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.7521823472356935,
+        "profit": -254520.34589041106,
+        "total_cost": 443742.34589041106,
+        "carbon_kgco2e": 2632.5,
+        "stockout_days": 119,
+        "n_orders": 98,
+        "shipping_modes": {
+          "Standard Class": 17,
+          "Second Class": 81
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 360,
+          "escalated": 5,
+          "escalation_rate_pct": 1.36986301369863,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 162570.2328767123,
+        "total_cost": 64870.76712328769,
+        "carbon_kgco2e": 525.0,
+        "stockout_days": 0,
+        "n_orders": 67,
+        "shipping_modes": {
+          "Standard Class": 67
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 340,
+          "escalated": 25,
+          "escalation_rate_pct": 6.8493150684931505,
+          "modified_by_human": 8,
+          "modification_rate_pct": 2.191780821917808,
+          "avg_qty_change": -137.5
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7502743233357717,
+        "profit": -197211.67945205467,
+        "total_cost": 385926.67945205467,
+        "carbon_kgco2e": 3643.75,
+        "stockout_days": 119,
+        "n_orders": 83,
+        "shipping_modes": {
+          "Standard Class": 1,
+          "Second Class": 81,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 358,
+          "escalated": 7,
+          "escalation_rate_pct": 1.9178082191780823,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.985753052917232,
+        "profit": 9687.527397260303,
+        "total_cost": 142877.4726027397,
+        "carbon_kgco2e": 1462.5,
+        "stockout_days": 5,
+        "n_orders": 135,
+        "shipping_modes": {
+          "Standard Class": 128,
+          "First Class": 3,
+          "Second Class": 4
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 358,
+          "escalated": 7,
+          "escalation_rate_pct": 1.9178082191780823,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      }
+    },
+    "portfolio_profit": -161297.6715136986,
+    "portfolio_carbon": 9442.5,
+    "portfolio_cost": 1128598.6715136985,
+    "portfolio_sl": 0.8932586807962724,
+    "portfolio_stockout": 253,
+    "consolidation": {
+      "total_shipments": 438,
+      "consolidated_shipments": 6,
+      "consolidation_rate_pct": 1.36986301369863,
+      "total_cost_saved": 1545.0,
+      "total_carbon_saved_kg": 34.5,
+      "consolidation_events": 6
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 12,
+          "n_alerts": 11,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.7901,
+          "avg_rolling_sl": 0.976975,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 30,
+          "n_alerts": 24,
+          "n_retrain_triggers": 6,
+          "min_rolling_sl": 0.486,
+          "avg_rolling_sl": 0.7508889880952381,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 18,
+          "n_alerts": 14,
+          "n_retrain_triggers": 4,
+          "min_rolling_sl": 0.6186,
+          "avg_rolling_sl": 0.7472571428571428,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 1,
+          "n_alerts": 0,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.838,
+          "avg_rolling_sl": 0.9909449404761904,
+          "retraining_recommended": false,
+          "policy_stable": false
+        }
+      },
+      "total_drift_events": 61,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.961,
+          "rolling_30d": 0.931,
+          "lead_time_multiplier": 1.019
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.975,
+          "rolling_30d": 0.898,
+          "lead_time_multiplier": 1.012
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.689,
+          "rolling_30d": 0.767,
+          "lead_time_multiplier": 1.155
+        }
+      },
+      "low_reliability_events": 43
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9748262258125118,
+        "profit": 108828.56191780831,
+        "total_cost": 92348.96808219171,
+        "carbon_kgco2e": 1087.5,
+        "stockout_days": 11,
+        "n_orders": 68,
+        "shipping_modes": {
+          "Standard Class": 55,
+          "Second Class": 10,
+          "First Class": 3
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 329,
+          "escalated": 36,
+          "escalation_rate_pct": 9.863013698630137,
+          "modified_by_human": 24,
+          "modification_rate_pct": 6.575342465753424,
+          "avg_qty_change": -141.66666666666666
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.7659789900012657,
+        "profit": -222920.86164383555,
+        "total_cost": 407506.86164383555,
+        "carbon_kgco2e": 2598.75,
+        "stockout_days": 110,
+        "n_orders": 94,
+        "shipping_modes": {
+          "Standard Class": 13,
+          "Second Class": 81
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 358,
+          "escalated": 7,
+          "escalation_rate_pct": 1.9178082191780823,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 137931.38356164383,
+        "total_cost": 93064.61643835618,
+        "carbon_kgco2e": 832.5,
+        "stockout_days": 0,
+        "n_orders": 105,
+        "shipping_modes": {
+          "Standard Class": 104,
+          "Second Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 318,
+          "escalated": 47,
+          "escalation_rate_pct": 12.876712328767123,
+          "modified_by_human": 3,
+          "modification_rate_pct": 0.821917808219178,
+          "avg_qty_change": -141.66666666666666
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7191681735985533,
+        "profit": -239170.78904109576,
+        "total_cost": 422112.78904109576,
+        "carbon_kgco2e": 3553.75,
+        "stockout_days": 133,
+        "n_orders": 81,
+        "shipping_modes": {
+          "Second Class": 80,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 357,
+          "escalated": 8,
+          "escalation_rate_pct": 2.191780821917808,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9979679385865884,
+        "profit": 9794.404109589028,
+        "total_cost": 144905.59589041097,
+        "carbon_kgco2e": 1482.5,
+        "stockout_days": 1,
+        "n_orders": 133,
+        "shipping_modes": {
+          "Standard Class": 129,
+          "First Class": 2,
+          "Second Class": 2
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 357,
+          "escalated": 8,
+          "escalation_rate_pct": 2.191780821917808,
+          "modified_by_human": 2,
+          "modification_rate_pct": 0.547945205479452,
+          "avg_qty_change": -150.0
+        }
+      }
+    },
+    "portfolio_profit": -205537.30109589014,
+    "portfolio_carbon": 9555.0,
+    "portfolio_cost": 1159938.8310958901,
+    "portfolio_sl": 0.8915882655997838,
+    "portfolio_stockout": 255,
+    "consolidation": {
+      "total_shipments": 477,
+      "consolidated_shipments": 4,
+      "consolidation_rate_pct": 0.8385744234800839,
+      "total_cost_saved": 720.0,
+      "total_carbon_saved_kg": 13.5,
+      "consolidation_events": 4
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 28,
+          "n_alerts": 28,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.8539,
+          "avg_rolling_sl": 0.9731705357142857,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 20,
+          "n_alerts": 15,
+          "n_retrain_triggers": 5,
+          "min_rolling_sl": 0.4266,
+          "avg_rolling_sl": 0.7612002976190476,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 1,
+          "n_alerts": 0,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.5365,
+          "avg_rolling_sl": 0.7136250000000001,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9735,
+          "avg_rolling_sl": 0.9979413690476191,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 49,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.841,
+          "rolling_30d": 0.932,
+          "lead_time_multiplier": 1.08
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.996,
+          "rolling_30d": 0.897,
+          "lead_time_multiplier": 1.002
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.825,
+          "rolling_30d": 0.787,
+          "lead_time_multiplier": 1.088
+        }
+      },
+      "low_reliability_events": 33
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9526990431485828,
+        "profit": 72786.88335616433,
+        "total_cost": 131802.4066438357,
+        "carbon_kgco2e": 1232.5,
+        "stockout_days": 19,
+        "n_orders": 66,
+        "shipping_modes": {
+          "Standard Class": 48,
+          "Second Class": 11,
+          "First Class": 7
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 342,
+          "escalated": 23,
+          "escalation_rate_pct": 6.301369863013699,
+          "modified_by_human": 17,
+          "modification_rate_pct": 4.657534246575342,
+          "avg_qty_change": -133.8235294117647
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.773598820058997,
+        "profit": -217747.87397260283,
+        "total_cost": 409714.8739726028,
+        "carbon_kgco2e": 2745.0,
+        "stockout_days": 101,
+        "n_orders": 98,
+        "shipping_modes": {
+          "Second Class": 86,
+          "Standard Class": 12
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 364,
+          "escalated": 1,
+          "escalation_rate_pct": 0.273972602739726,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 0.998642687478792,
+        "profit": 176131.95890410958,
+        "total_cost": 56365.041095890425,
+        "carbon_kgco2e": 570.0,
+        "stockout_days": 1,
+        "n_orders": 69,
+        "shipping_modes": {
+          "Standard Class": 69
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 331,
+          "escalated": 34,
+          "escalation_rate_pct": 9.315068493150685,
+          "modified_by_human": 12,
+          "modification_rate_pct": 3.287671232876712,
+          "avg_qty_change": -129.16666666666666
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7642522721013495,
+        "profit": -178854.23835616448,
+        "total_cost": 370329.2383561645,
+        "carbon_kgco2e": 3701.25,
+        "stockout_days": 115,
+        "n_orders": 83,
+        "shipping_modes": {
+          "Second Class": 83
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 362,
+          "escalated": 3,
+          "escalation_rate_pct": 0.821917808219178,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 1.0,
+        "profit": 26775.2876712328,
+        "total_cost": 126419.7123287672,
+        "carbon_kgco2e": 1301.25,
+        "stockout_days": 0,
+        "n_orders": 121,
+        "shipping_modes": {
+          "Standard Class": 121
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 361,
+          "escalated": 4,
+          "escalation_rate_pct": 1.095890410958904,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      }
+    },
+    "portfolio_profit": -120907.98239726061,
+    "portfolio_carbon": 9550.0,
+    "portfolio_cost": 1094631.2723972606,
+    "portfolio_sl": 0.8978385645575443,
+    "portfolio_stockout": 236,
+    "consolidation": {
+      "total_shipments": 431,
+      "consolidated_shipments": 6,
+      "consolidation_rate_pct": 1.3921113689095126,
+      "total_cost_saved": 1245.0,
+      "total_carbon_saved_kg": 29.62,
+      "consolidation_events": 6
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 26,
+          "n_alerts": 25,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.7424,
+          "avg_rolling_sl": 0.9529520833333335,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 23,
+          "n_alerts": 17,
+          "n_retrain_triggers": 6,
+          "min_rolling_sl": 0.6223,
+          "avg_rolling_sl": 0.7638455357142858,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9833,
+          "avg_rolling_sl": 0.9995654761904762,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 21,
+          "n_alerts": 14,
+          "n_retrain_triggers": 7,
+          "min_rolling_sl": 0.5017,
+          "avg_rolling_sl": 0.7597285714285714,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 70,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.973,
+          "rolling_30d": 0.942,
+          "lead_time_multiplier": 1.014
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.887,
+          "rolling_30d": 0.878,
+          "lead_time_multiplier": 1.057
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.868,
+          "rolling_30d": 0.781,
+          "lead_time_multiplier": 1.066
+        }
+      },
+      "low_reliability_events": 32
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9666488318173712,
+        "profit": 98612.41969863017,
+        "total_cost": 111520.98030136985,
+        "carbon_kgco2e": 1252.5,
+        "stockout_days": 16,
+        "n_orders": 71,
+        "shipping_modes": {
+          "Standard Class": 53,
+          "Second Class": 18
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 340,
+          "escalated": 25,
+          "escalation_rate_pct": 6.8493150684931505,
+          "modified_by_human": 22,
+          "modification_rate_pct": 6.027397260273973,
+          "avg_qty_change": -138.63636363636363
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.91988845227532,
+        "profit": -110263.0256849316,
+        "total_cost": 331601.5256849316,
+        "carbon_kgco2e": 3120.0,
+        "stockout_days": 36,
+        "n_orders": 155,
+        "shipping_modes": {
+          "Standard Class": 124,
+          "Second Class": 28,
+          "First Class": 3
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 325,
+          "escalated": 40,
+          "escalation_rate_pct": 10.95890410958904,
+          "modified_by_human": 20,
+          "modification_rate_pct": 5.47945205479452,
+          "avg_qty_change": -147.5
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 144213.56164383562,
+        "total_cost": 86624.43835616438,
+        "carbon_kgco2e": 491.25,
+        "stockout_days": 0,
+        "n_orders": 63,
+        "shipping_modes": {
+          "Standard Class": 63
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 339,
+          "escalated": 26,
+          "escalation_rate_pct": 7.123287671232877,
+          "modified_by_human": 4,
+          "modification_rate_pct": 1.095890410958904,
+          "avg_qty_change": -125.0
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7075445562840521,
+        "profit": -247716.18630137044,
+        "total_cost": 423942.18630137044,
+        "carbon_kgco2e": 3386.25,
+        "stockout_days": 132,
+        "n_orders": 78,
+        "shipping_modes": {
+          "Second Class": 78
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 357,
+          "escalated": 8,
+          "escalation_rate_pct": 2.191780821917808,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9997720018239854,
+        "profit": 23171.09246575342,
+        "total_cost": 130303.90753424658,
+        "carbon_kgco2e": 1390.0,
+        "stockout_days": 1,
+        "n_orders": 128,
+        "shipping_modes": {
+          "Standard Class": 124,
+          "First Class": 1,
+          "Second Class": 3
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 357,
+          "escalated": 8,
+          "escalation_rate_pct": 2.191780821917808,
+          "modified_by_human": 1,
+          "modification_rate_pct": 0.273972602739726,
+          "avg_qty_change": -125.0
+        }
+      }
+    },
+    "portfolio_profit": -91982.13817808284,
+    "portfolio_carbon": 9640.0,
+    "portfolio_cost": 1083993.0381780828,
+    "portfolio_sl": 0.9187707684401458,
+    "portfolio_stockout": 185,
+    "consolidation": {
+      "total_shipments": 473,
+      "consolidated_shipments": 22,
+      "consolidation_rate_pct": 4.651162790697675,
+      "total_cost_saved": 5070.0,
+      "total_carbon_saved_kg": 73.5,
+      "consolidation_events": 22
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 1,
+          "n_alerts": 0,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.6996,
+          "avg_rolling_sl": 0.9729389880952382,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 6,
+          "n_alerts": 5,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.6086,
+          "avg_rolling_sl": 0.9149318452380952,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 10,
+          "n_alerts": 6,
+          "n_retrain_triggers": 4,
+          "min_rolling_sl": 0.4315,
+          "avg_rolling_sl": 0.7146199404761905,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9973,
+          "avg_rolling_sl": 0.9999372023809523,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 17,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.97,
+          "rolling_30d": 0.929,
+          "lead_time_multiplier": 1.015
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.908,
+          "rolling_30d": 0.888,
+          "lead_time_multiplier": 1.046
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.774,
+          "rolling_30d": 0.779,
+          "lead_time_multiplier": 1.113
+        }
+      },
+      "low_reliability_events": 28
+    },
+    "is_agentic": true
+  },
+  {
+    "per_sku": {
+      "SKU_FIELD_SPORT": {
+        "sku": "SKU_FIELD_SPORT",
+        "service_level": 0.9559599636032757,
+        "profit": 78234.40527397266,
+        "total_cost": 125424.4047260274,
+        "carbon_kgco2e": 1205.0,
+        "stockout_days": 17,
+        "n_orders": 65,
+        "shipping_modes": {
+          "Standard Class": 48,
+          "First Class": 2,
+          "Second Class": 15
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 346,
+          "escalated": 19,
+          "escalation_rate_pct": 5.205479452054795,
+          "modified_by_human": 12,
+          "modification_rate_pct": 3.287671232876712,
+          "avg_qty_change": -137.5
+        }
+      },
+      "SKU_FITNESS": {
+        "sku": "SKU_FITNESS",
+        "service_level": 0.7752906257729408,
+        "profit": -213406.99143835658,
+        "total_cost": 404611.4914383566,
+        "carbon_kgco2e": 2715.0,
+        "stockout_days": 112,
+        "n_orders": 100,
+        "shipping_modes": {
+          "Second Class": 87,
+          "Standard Class": 13
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 363,
+          "escalated": 2,
+          "escalation_rate_pct": 0.547945205479452,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_BICYCLE": {
+        "sku": "SKU_BICYCLE",
+        "service_level": 1.0,
+        "profit": 163234.9041095891,
+        "total_cost": 64601.09589041092,
+        "carbon_kgco2e": 487.5,
+        "stockout_days": 0,
+        "n_orders": 61,
+        "shipping_modes": {
+          "Standard Class": 61
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 339,
+          "escalated": 26,
+          "escalation_rate_pct": 7.123287671232877,
+          "modified_by_human": 7,
+          "modification_rate_pct": 1.9178082191780823,
+          "avg_qty_change": -132.14285714285714
+        }
+      },
+      "SKU_WATCH": {
+        "sku": "SKU_WATCH",
+        "service_level": 0.7228369308906222,
+        "profit": -233645.16712328792,
+        "total_cost": 416955.1671232879,
+        "carbon_kgco2e": 3555.0,
+        "stockout_days": 128,
+        "n_orders": 79,
+        "shipping_modes": {
+          "Second Class": 79
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 360,
+          "escalated": 5,
+          "escalation_rate_pct": 1.36986301369863,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      },
+      "SKU_GOLF": {
+        "sku": "SKU_GOLF",
+        "service_level": 0.9938900203665988,
+        "profit": 14529.448630136962,
+        "total_cost": 139190.55136986304,
+        "carbon_kgco2e": 1427.5,
+        "stockout_days": 3,
+        "n_orders": 128,
+        "shipping_modes": {
+          "Standard Class": 124,
+          "Second Class": 3,
+          "First Class": 1
+        },
+        "hitl_summary": {
+          "total_decisions": 365,
+          "auto_approved": 359,
+          "escalated": 6,
+          "escalation_rate_pct": 1.643835616438356,
+          "modified_by_human": 0,
+          "modification_rate_pct": 0.0,
+          "avg_qty_change": 0.0
+        }
+      }
+    },
+    "portfolio_profit": -191053.40054794578,
+    "portfolio_carbon": 9390.0,
+    "portfolio_cost": 1150782.710547946,
+    "portfolio_sl": 0.8895955081266875,
+    "portfolio_stockout": 260,
+    "consolidation": {
+      "total_shipments": 430,
+      "consolidated_shipments": 3,
+      "consolidation_rate_pct": 0.6976744186046512,
+      "total_cost_saved": 735.0,
+      "total_carbon_saved_kg": 17.62,
+      "consolidation_events": 3
+    },
+    "drift": {
+      "per_sku": {
+        "SKU_FIELD_SPORT": {
+          "sku": "SKU_FIELD_SPORT",
+          "n_drift_events": 46,
+          "n_alerts": 45,
+          "n_retrain_triggers": 1,
+          "min_rolling_sl": 0.8151,
+          "avg_rolling_sl": 0.9526568452380951,
+          "retraining_recommended": false,
+          "policy_stable": false
+        },
+        "SKU_FITNESS": {
+          "sku": "SKU_FITNESS",
+          "n_drift_events": 24,
+          "n_alerts": 18,
+          "n_retrain_triggers": 6,
+          "min_rolling_sl": 0.5335,
+          "avg_rolling_sl": 0.7726895833333335,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_BICYCLE": {
+          "sku": "SKU_BICYCLE",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 1.0,
+          "avg_rolling_sl": 1.0,
+          "retraining_recommended": false,
+          "policy_stable": true
+        },
+        "SKU_WATCH": {
+          "sku": "SKU_WATCH",
+          "n_drift_events": 4,
+          "n_alerts": 2,
+          "n_retrain_triggers": 2,
+          "min_rolling_sl": 0.5388,
+          "avg_rolling_sl": 0.7180651785714286,
+          "retraining_recommended": true,
+          "policy_stable": false
+        },
+        "SKU_GOLF": {
+          "sku": "SKU_GOLF",
+          "n_drift_events": 0,
+          "n_alerts": 0,
+          "n_retrain_triggers": 0,
+          "min_rolling_sl": 0.9301,
+          "avg_rolling_sl": 0.9982857142857142,
+          "retraining_recommended": false,
+          "policy_stable": true
+        }
+      },
+      "total_drift_events": 74,
+      "portfolio_stable": false
+    },
+    "supplier_reliability": {
+      "regions": {
+        "US_EAST": {
+          "base_reliability": 0.92,
+          "current_reliability": 0.882,
+          "rolling_30d": 0.925,
+          "lead_time_multiplier": 1.059
+        },
+        "US_WEST": {
+          "base_reliability": 0.88,
+          "current_reliability": 0.797,
+          "rolling_30d": 0.891,
+          "lead_time_multiplier": 1.102
+        },
+        "ASIA": {
+          "base_reliability": 0.78,
+          "current_reliability": 0.873,
+          "rolling_30d": 0.761,
+          "lead_time_multiplier": 1.063
+        }
+      },
+      "low_reliability_events": 39
+    },
+    "is_agentic": true
+  }
+]

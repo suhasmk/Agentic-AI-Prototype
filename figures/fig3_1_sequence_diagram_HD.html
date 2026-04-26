@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Figure 3.1 — Multi-Agent Sequence Diagram</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: #fff;
+    padding: 32px 40px 40px;
+  }
+  .title {
+    font-size: 13px; font-weight: 600; color: #1B3A6B;
+    margin-bottom: 4px;
+    letter-spacing: 0.02em;
+  }
+  .subtitle {
+    font-size: 11px; color: #555; margin-bottom: 24px;
+  }
+  svg { display: block; }
+  .caption {
+    font-size: 10.5px; color: #555; margin-top: 14px;
+    line-height: 1.6; max-width: 920px;
+  }
+  .caption strong { color: #1B3A6B; }
+</style>
+</head>
+<body>
+
+<div class="title">Figure 3.1a — Multi-Agent Sequence Diagram: Single Ordering Decision Cycle (Day t)</div>
+<div class="subtitle">EG7302 · Agentic AI Prototype for Autonomous Inventory Management · University of Leicester</div>
+
+<svg width="960" height="620" viewBox="0 0 960 620" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <!-- Arrow markers -->
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M1 1L9 5L1 9" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M1 1L9 5L1 9" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M1 1L9 5L1 9" fill="none" stroke="#BA7517" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M1 1L9 5L1 9" fill="none" stroke="#0F6E56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M1 1L9 5L1 9" fill="none" stroke="#A32D2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <!-- Governance zone fill -->
+  <pattern id="gov-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#BA7517" stroke-width="0.4" stroke-opacity="0.3"/>
+  </pattern>
+</defs>
+
+<!-- ── GOVERNANCE ZONE BACKGROUND ── -->
+<rect x="605" y="52" width="130" height="470" fill="#FFFBF0" opacity="0.9" rx="4"/>
+<rect x="605" y="52" width="130" height="470" fill="none" stroke="#BA7517" stroke-width="1" stroke-dasharray="5 3" rx="4"/>
+<text x="670" y="46" text-anchor="middle" font-family="Inter,Arial" font-size="9" font-weight="600" fill="#854F0B" letter-spacing="0.5">EU AI Act Art.14 Oversight Zone</text>
+
+<!-- ── AGENT HEADER BOXES ── -->
+<!-- StochasticEnv -->
+<rect x="30" y="56" width="110" height="52" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="1.2"/>
+<text x="85" y="76" text-anchor="middle" font-family="Inter,Arial" font-size="11" font-weight="600" fill="#2C2C2A">Stochastic</text>
+<text x="85" y="92" text-anchor="middle" font-family="Inter,Arial" font-size="11" font-weight="600" fill="#2C2C2A">Environment</text>
+
+<!-- Forecaster -->
+<rect x="185" y="56" width="110" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+<text x="240" y="76" text-anchor="middle" font-family="Inter,Arial" font-size="11" font-weight="600" fill="#04342C">Adaptive</text>
+<text x="240" y="92" text-anchor="middle" font-family="Inter,Arial" font-size="11" font-weight="600" fill="#04342C">Forecaster</text>
+
+<!-- RL Inventory -->
+<rect x="340" y="56" width="120" height="52" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.2"/>
+<text x="400" y="76" text-anchor="middle" font-family="Inter,Arial" font-size="11" font-weight="600" fill="#26215C">RL Inventory</text>
+<text x="400" y="92" text-anchor="middle" font-family="Inter,Arial" font-size="11" font-weight="600" fill="#26215C">Agent</text>
+
+<!-- Governance -->
+<rect x="610" y="56" width="120" height="52" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="2"/>
+<text x="670" y="76" text-anchor="middle" font-family="Inter,Arial" font-size="11" font-weight="600" fill="#412402">Governance</text>
+<text x="670" y="92" text-anchor="middle" font-family="Inter,Arial" font-size="11" font-weight="600" fill="#412402">Agent (HITL)</text>
+
+<!-- Logistics -->
+<rect x="800" y="56" width="110" height="52" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.2"/>
+<text x="855" y="76" text-anchor="middle" font-family="Inter,Arial" font-size="11" font-weight="600" fill="#042C53">Logistics</text>
+<text x="855" y="92" text-anchor="middle" font-family="Inter,Arial" font-size="11" font-weight="600" fill="#042C53">Agent</text>
+
+<!-- ── LIFELINES ── -->
+<line x1="85"  y1="108" x2="85"  y2="558" stroke="#BBBBBB" stroke-width="0.7" stroke-dasharray="5 4"/>
+<line x1="240" y1="108" x2="240" y2="558" stroke="#BBBBBB" stroke-width="0.7" stroke-dasharray="5 4"/>
+<line x1="400" y1="108" x2="400" y2="558" stroke="#BBBBBB" stroke-width="0.7" stroke-dasharray="5 4"/>
+<line x1="670" y1="108" x2="670" y2="558" stroke="#BA7517" stroke-width="0.8" stroke-dasharray="5 4"/>
+<line x1="855" y1="108" x2="855" y2="558" stroke="#BBBBBB" stroke-width="0.7" stroke-dasharray="5 4"/>
+
+<!-- ── ACTIVATION BARS ── -->
+<!-- RL active 160-280 -->
+<rect x="395" y="190" width="10" height="130" rx="2" fill="#7F77DD" opacity="0.75"/>
+<!-- Governance active 285-430 -->
+<rect x="665" y="280" width="10" height="160" rx="2" fill="#BA7517" opacity="0.75"/>
+
+<!-- ══ MESSAGE FLOWS ══ -->
+
+<!-- M1: Env → Forecaster: demand(t) -->
+<text x="162" y="135" text-anchor="middle" font-family="Inter,Arial" font-size="10" fill="#444">demand(t)</text>
+<line x1="90" y1="142" x2="184" y2="142" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<!-- M2: Env → Forecaster: update() -->
+<text x="162" y="164" text-anchor="middle" font-family="Inter,Arial" font-size="10" fill="#444">update() → MA forecast</text>
+<line x1="90" y1="171" x2="184" y2="171" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<!-- M3: Env → RL: disruption_flag=True (dashed, red) -->
+<text x="242" y="196" text-anchor="middle" font-family="Inter,Arial" font-size="10" fill="#A32D2D" font-weight="500">disruption_flag = True  ⚠</text>
+<line x1="90" y1="203" x2="394" y2="203" stroke="#A32D2D" stroke-width="1.5" stroke-dasharray="6 3" marker-end="url(#arr-red)"/>
+
+<!-- M4: Forecaster → RL: forecast(t+1) -->
+<text x="318" y="225" text-anchor="middle" font-family="Inter,Arial" font-size="10" fill="#0F6E56" font-weight="500">forecast(t+1)   demand_rate = HIGH</text>
+<line x1="245" y1="232" x2="394" y2="232" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arr-teal)"/>
+
+<!-- State encode note box -->
+<rect x="416" y="245" width="145" height="50" rx="5" fill="#F0EEFF" stroke="#AFA9EC" stroke-width="0.8"/>
+<text x="488" y="261" text-anchor="middle" font-family="Inter,Arial" font-size="9.5" fill="#26215C" font-weight="600">encode_state()</text>
+<text x="488" y="276" text-anchor="middle" font-family="Inter,Arial" font-size="9" fill="#3C3489">[inv, fc, pend, disrupt=1, rate=HIGH]</text>
+<text x="488" y="289" text-anchor="middle" font-family="Inter,Arial" font-size="9" fill="#534AB7">→ Q-table lookup → action = 200u</text>
+
+<!-- M5: KEY — RL → Governance: propose qty=200u -->
+<text x="534" y="310" text-anchor="middle" font-family="Inter,Arial" font-size="10.5" fill="#3C3489" font-weight="700">propose:  qty = 200u</text>
+<line x1="405" y1="318" x2="662" y2="318" stroke="#5b2d8e" stroke-width="2.8" marker-end="url(#arr-purple)"/>
+
+<!-- HITL trigger note -->
+<rect x="612" y="328" width="116" height="48" rx="5" fill="#FAEEDA" stroke="#BA7517" stroke-width="1.2"/>
+<text x="670" y="344" text-anchor="middle" font-family="Inter,Arial" font-size="9.5" fill="#412402" font-weight="600">HITL triggered</text>
+<text x="670" y="358" text-anchor="middle" font-family="Inter,Arial" font-size="9" fill="#633806">qty ≥ 150u threshold</text>
+<text x="670" y="370" text-anchor="middle" font-family="Inter,Arial" font-size="9" fill="#633806">disruption active</text>
+
+<!-- Art.14 audit log -->
+<rect x="614" y="385" width="114" height="22" rx="4" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.7"/>
+<text x="671" y="400" text-anchor="middle" font-family="Inter,Arial" font-size="9" fill="#791F1F">Art.14(4)(c): decision logged</text>
+
+<!-- Cap + SHA-256 -->
+<rect x="614" y="414" width="114" height="22" rx="4" fill="#FFF5CC" stroke="#BA7517" stroke-width="0.7"/>
+<text x="671" y="429" text-anchor="middle" font-family="Inter,Arial" font-size="9" fill="#412402">cap applied · SHA-256 hash</text>
+
+<!-- M6: Governance → Logistics: approved(200u) -->
+<text x="762" y="454" text-anchor="middle" font-family="Inter,Arial" font-size="10.5" fill="#185FA5" font-weight="600">approved: qty = 200u</text>
+<line x1="675" y1="462" x2="848" y2="462" stroke="#185FA5" stroke-width="1.8" marker-end="url(#arr-blue)"/>
+
+<!-- Logistics action box -->
+<rect x="742" y="472" width="118" height="40" rx="5" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.8"/>
+<text x="801" y="488" text-anchor="middle" font-family="Inter,Arial" font-size="9.5" fill="#042C53" font-weight="600">route_shipment()</text>
+<text x="801" y="502" text-anchor="middle" font-family="Inter,Arial" font-size="9" fill="#0C447C">LT_disrupted = 12.5 days</text>
+
+<!-- M7: Env confirmation (dashed return) -->
+<text x="462" y="530" text-anchor="middle" font-family="Inter,Arial" font-size="9.5" fill="#555">order confirmed → pipeline updated → next state(t+1)</text>
+<line x1="850" y1="537" x2="96" y2="537" stroke="#999" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+
+<!-- ── STEP LABELS (left margin) ── -->
+<text x="24" y="146" text-anchor="end" font-family="Inter,Arial" font-size="9" fill="#888" font-weight="600">①</text>
+<text x="24" y="175" text-anchor="end" font-family="Inter,Arial" font-size="9" fill="#888" font-weight="600">②</text>
+<text x="24" y="207" text-anchor="end" font-family="Inter,Arial" font-size="9" fill="#A32D2D" font-weight="700">③</text>
+<text x="24" y="236" text-anchor="end" font-family="Inter,Arial" font-size="9" fill="#0F6E56" font-weight="600">④</text>
+<text x="24" y="322" text-anchor="end" font-family="Inter,Arial" font-size="9" fill="#3C3489" font-weight="700">⑤</text>
+<text x="24" y="466" text-anchor="end" font-family="Inter,Arial" font-size="9" fill="#185FA5" font-weight="600">⑥</text>
+<text x="24" y="541" text-anchor="end" font-family="Inter,Arial" font-size="9" fill="#888" font-weight="600">⑦</text>
+
+<!-- ── COMPLIANCE FOOTER BAR ── -->
+<rect x="30" y="555" width="900" height="42" rx="7" fill="#FFF8EE" stroke="#E8D9BE" stroke-width="0.8"/>
+<text x="480" y="571" text-anchor="middle" font-family="Inter,Arial" font-size="9.5" fill="#412402" font-weight="600">EU AI Act Article 14(4)(d): Governance Agent intercepts all RL proposals before Logistics execution</text>
+<text x="480" y="587" text-anchor="middle" font-family="Inter,Arial" font-size="9" fill="#5a4410">4.1–23.9 HITL reviews/year · 365 audit log entries/year · SHA-256 decision hash per cycle · Proportionate to disruption risk</text>
+
+</svg>
+
+<div class="caption">
+  <strong>Figure 3.1a:</strong> Multi-agent sequence diagram for a single ordering decision cycle under active supply disruption (Day <em>t</em>).
+  The five-agent architecture processes state information left-to-right through the decision pipeline.
+  <strong>Step ③</strong> is the critical trigger: the Environment broadcasts <code>disruption_flag = True</code>,
+  which the RL Inventory Agent encodes as a state variable to order proactively (Step ⑤: 200u) before inventory breaches the classical (s, S) reorder threshold.
+  The Governance Agent (amber zone) intercepts the RL proposal, applies the HITL threshold check, logs an SHA-256 audit entry,
+  and approves execution to the Logistics Agent — implementing EU AI Act Article 14(4)(c) and (d) compliance-by-design.
+  The Logistics Agent routes the shipment under a disrupted lead time of 12.5 days.
+</div>
+
+</body>
+</html>

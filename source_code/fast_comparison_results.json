@@ -1,0 +1,39 @@
+{
+  "conditions": {
+    "C1_base_poisson": {
+      "baseline_sl": 86.06,
+      "ollama_sl": 100.0,
+      "qlearning_sl": 99.51,
+      "delta_llm_vs_b": 13.94,
+      "delta_rl_vs_llm": -0.49,
+      "d_llm_vs_b": 4.97,
+      "d_rl_vs_llm": -0.69,
+      "p_llm_vs_b": 0.0,
+      "p_rl_vs_llm": 0.000293,
+      "n_runs": 30,
+      "cache_hit_pct": 99.6,
+      "total_api_calls": 39,
+      "llm_time_min": 1.2
+    },
+    "C2_high_poisson": {
+      "baseline_sl": 51.92,
+      "ollama_sl": 99.98,
+      "qlearning_sl": 92.51,
+      "delta_llm_vs_b": 48.06,
+      "delta_rl_vs_llm": -7.47,
+      "d_llm_vs_b": 12.4,
+      "d_rl_vs_llm": -2.61,
+      "p_llm_vs_b": 0.0,
+      "p_rl_vs_llm": 0.0,
+      "n_runs": 30,
+      "cache_hit_pct": 99.6,
+      "total_api_calls": 41,
+      "llm_time_min": 1.2
+    }
+  },
+  "model": "gemma2:2b",
+  "n_runs": 30,
+  "n_workers": 4,
+  "total_min": 2.4,
+  "cost_gbp": 0.0
+}

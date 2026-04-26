@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>State Space Discretisation — 1,344 Q-table States</title>
+<style>body{font-family:"Segoe UI",Arial,sans-serif;background:#faf8f4;margin:36px}
+h2{font-size:13px;color:#1B3A6B;font-weight:600;margin:0 0 8px}
+.fig{max-width:860px;margin:0 auto}</style>
+</head><body><div class="fig"><h2>State Space Discretisation — 1,344 Q-table States</h2>
+<svg width="100%" viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg">
+<!-- column headers -->
+<text style="font-size:11px;font-weight:600;font-family:Segoe UI,Arial;fill:#555" x="174" y="56" text-anchor="end">State dimension</text>
+<line x1="176" y1="44" x2="176" y2="308" stroke="#ddd" stroke-width="0.8"/>
+<text style="font-size:11px;font-weight:600;font-family:Segoe UI,Arial;fill:#555" x="408" y="56" text-anchor="middle">Discretised bins</text>
+<line x1="176" y1="62" x2="638" y2="62" stroke="#ddd" stroke-width="0.8"/>
+<!-- row labels -->
+<text style="font-size:11px;font-family:Segoe UI,Arial;fill:#2a2520" x="172" y="93" text-anchor="end">Inventory</text>
+<text style="font-size:11px;font-weight:600;font-family:Segoe UI,Arial;fill:#3C3489" x="172" y="139" text-anchor="end">Demand forecast</text>
+<text style="font-size:11px;font-family:Segoe UI,Arial;fill:#2a2520" x="172" y="185" text-anchor="end">Pending orders</text>
+<text style="font-size:11px;font-family:Segoe UI,Arial;fill:#2a2520" x="172" y="231" text-anchor="end">Disruption flag</text>
+<text style="font-size:11px;font-weight:600;font-family:Segoe UI,Arial;fill:#04342C" x="172" y="277" text-anchor="end">Demand rate &#9733;</text>
+<!-- bin rows -->
+<rect x="178.0" y="74" width="57.5" height="38" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#042C53" x="206.8" y="93.0" text-anchor="middle" dominant-baseline="central">0-25</text>
+<rect x="235.5" y="74" width="57.5" height="38" fill="#85B7EB" stroke="#185FA5" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#042C53" x="264.2" y="93.0" text-anchor="middle" dominant-baseline="central">25-50</text>
+<rect x="293.0" y="74" width="57.5" height="38" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#042C53" x="321.8" y="93.0" text-anchor="middle" dominant-baseline="central">50-75</text>
+<rect x="350.5" y="74" width="57.5" height="38" fill="#85B7EB" stroke="#185FA5" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#042C53" x="379.2" y="93.0" text-anchor="middle" dominant-baseline="central">75-100</text>
+<rect x="408.0" y="74" width="57.5" height="38" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#042C53" x="436.8" y="93.0" text-anchor="middle" dominant-baseline="central">100-150</text>
+<rect x="465.5" y="74" width="57.5" height="38" fill="#85B7EB" stroke="#185FA5" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#042C53" x="494.2" y="93.0" text-anchor="middle" dominant-baseline="central">150-200</text>
+<rect x="523.0" y="74" width="57.5" height="38" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#042C53" x="551.8" y="93.0" text-anchor="middle" dominant-baseline="central">200-300</text>
+<rect x="580.5" y="74" width="57.5" height="38" fill="#85B7EB" stroke="#185FA5" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#042C53" x="609.2" y="93.0" text-anchor="middle" dominant-baseline="central">>300</text>
+<rect x="178.0" y="120" width="65.7" height="38" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#26215C" x="210.9" y="139.0" text-anchor="middle" dominant-baseline="central">0-3</text>
+<rect x="243.7" y="120" width="65.7" height="38" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#26215C" x="276.6" y="139.0" text-anchor="middle" dominant-baseline="central">3-6</text>
+<rect x="309.4" y="120" width="65.7" height="38" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#26215C" x="342.3" y="139.0" text-anchor="middle" dominant-baseline="central">6-9</text>
+<rect x="375.1" y="120" width="65.7" height="38" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#26215C" x="408.0" y="139.0" text-anchor="middle" dominant-baseline="central">9-12</text>
+<rect x="440.9" y="120" width="65.7" height="38" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#26215C" x="473.7" y="139.0" text-anchor="middle" dominant-baseline="central">12-18</text>
+<rect x="506.6" y="120" width="65.7" height="38" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#26215C" x="539.4" y="139.0" text-anchor="middle" dominant-baseline="central">18-25</text>
+<rect x="572.3" y="120" width="65.7" height="38" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#26215C" x="605.1" y="139.0" text-anchor="middle" dominant-baseline="central">>25</text>
+<rect x="178.0" y="166" width="115.0" height="38" fill="#D3D1C7" stroke="#888780" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#2C2C2A" x="235.5" y="185.0" text-anchor="middle" dominant-baseline="central">0-50</text>
+<rect x="293.0" y="166" width="115.0" height="38" fill="#B4B2A9" stroke="#888780" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#2C2C2A" x="350.5" y="185.0" text-anchor="middle" dominant-baseline="central">50-100</text>
+<rect x="408.0" y="166" width="115.0" height="38" fill="#D3D1C7" stroke="#888780" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#2C2C2A" x="465.5" y="185.0" text-anchor="middle" dominant-baseline="central">100-200</text>
+<rect x="523.0" y="166" width="115.0" height="38" fill="#B4B2A9" stroke="#888780" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#2C2C2A" x="580.5" y="185.0" text-anchor="middle" dominant-baseline="central">>200</text>
+<rect x="178.0" y="212" width="230.0" height="38" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#173404" x="293.0" y="231.0" text-anchor="middle" dominant-baseline="central">Normal (0)</text>
+<rect x="408.0" y="212" width="230.0" height="38" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#501313" x="523.0" y="231.0" text-anchor="middle" dominant-baseline="central">Disruption (1)</text>
+<rect x="178.0" y="258" width="153.3" height="38" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#04342C" x="254.7" y="277.0" text-anchor="middle" dominant-baseline="central">Low (&#955;&lt;9)</text>
+<rect x="331.3" y="258" width="153.3" height="38" fill="#1D9E75" stroke="#0F6E56" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#fff" x="408.0" y="277.0" text-anchor="middle" dominant-baseline="central">Mid (9&#8211;18)</text>
+<rect x="484.7" y="258" width="153.3" height="38" fill="#085041" stroke="#0F6E56" stroke-width="0.5"/>
+<text style="font-size:10px;font-family:Segoe UI,Arial;fill:#fff" x="561.3" y="277.0" text-anchor="middle" dominant-baseline="central">High (&#955;&gt;18)</text>
+<!-- bin count badges -->
+<text style="font-size:9.5px;fill:#888;font-family:Arial" x="641" y="93" dominant-baseline="central">8</text>
+<text style="font-size:9.5px;fill:#534AB7;font-weight:600;font-family:Arial" x="641" y="139" dominant-baseline="central">7</text>
+<text style="font-size:9.5px;fill:#888;font-family:Arial" x="641" y="185" dominant-baseline="central">4</text>
+<text style="font-size:9.5px;fill:#888;font-family:Arial" x="641" y="231" dominant-baseline="central">2</text>
+<text style="font-size:9.5px;fill:#085041;font-weight:600;font-family:Arial" x="641" y="277" dominant-baseline="central">3</text>
+<!-- key contribution badge -->
+<rect x="432" y="249" width="148" height="17" rx="3" fill="#085041" opacity="0.14"/>
+<text style="font-size:9px;fill:#04342C;font-weight:600;font-family:Arial" x="506" y="260" text-anchor="middle">&#9733; Eliminates negative transfer</text>
+<!-- computation section -->
+<line x1="40" y1="308" x2="638" y2="308" stroke="#ddd" stroke-width="0.8"/>
+<text style="font-size:11.5px;font-weight:600;font-family:Segoe UI,Arial;fill:#1B3A6B" x="40" y="330">State space:</text>
+<rect x="128" y="319" width="26" height="19" rx="4" fill="#B5D4F4"/>
+<text style="font-size:11px;font-weight:600;font-family:Arial;fill:#042C53" x="141" y="331" text-anchor="middle">8</text>
+<text style="font-size:12px;fill:#888;font-family:Arial" x="158" y="331">&#215;</text>
+<rect x="165" y="319" width="26" height="19" rx="4" fill="#CECBF6"/>
+<text style="font-size:11px;font-weight:600;font-family:Arial;fill:#26215C" x="178" y="331" text-anchor="middle">7</text>
+<text style="font-size:12px;fill:#888;font-family:Arial" x="195" y="331">&#215;</text>
+<rect x="202" y="319" width="26" height="19" rx="4" fill="#D3D1C7"/>
+<text style="font-size:11px;font-weight:600;font-family:Arial;fill:#2C2C2A" x="215" y="331" text-anchor="middle">4</text>
+<text style="font-size:12px;fill:#888;font-family:Arial" x="232" y="331">&#215;</text>
+<rect x="239" y="319" width="26" height="19" rx="4" fill="#EAF3DE"/>
+<text style="font-size:11px;font-weight:600;font-family:Arial;fill:#173404" x="252" y="331" text-anchor="middle">2</text>
+<text style="font-size:12px;fill:#888;font-family:Arial" x="269" y="331">&#215;</text>
+<rect x="276" y="319" width="26" height="19" rx="4" fill="#1D9E75"/>
+<text style="font-size:11px;font-weight:600;font-family:Arial;fill:#fff" x="289" y="331" text-anchor="middle">3</text>
+<text style="font-size:13px;fill:#888;font-family:Arial" x="307" y="331">=</text>
+<rect x="316" y="317" width="80" height="22" rx="5" fill="#1B3A6B"/>
+<text style="font-size:12px;font-weight:600;font-family:Arial;fill:#fff" x="356" y="331" text-anchor="middle">1,344 states</text>
+<!-- comparison note -->
+<rect x="40" y="350" width="598" height="36" rx="6" fill="#FEF0F0" stroke="#F09595" stroke-width="0.6"/>
+<text style="font-size:10px;fill:#791F1F;font-weight:600;font-family:Segoe UI,Arial" x="339" y="364" text-anchor="middle">Without demand_rate_bin: 8&#215;7&#215;4&#215;2 = 448 states &#8212; negative transfer &#8722;29.4pp at &#955;=25</text>
+<text style="font-size:10px;fill:#085041;font-weight:600;font-family:Segoe UI,Arial" x="339" y="379" text-anchor="middle">With demand_rate_bin: 1,344 states &#8212; regime-specific policies &#8594; +29.4pp at &#955;=25 &#183; Primary contribution</text>
+</svg>
+</div></body></html>

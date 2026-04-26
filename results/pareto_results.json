@@ -1,0 +1,136 @@
+[
+  {
+    "carbon_penalty": 0,
+    "mean_profit": 143375.8566034247,
+    "std_profit": 15778.190958043753,
+    "mean_carbon": 982.0,
+    "std_carbon": 65.29899182478496,
+    "mean_sl": 0.99474882847204,
+    "n_runs": 10,
+    "shipping_modes": {
+      "Standard Class": 313,
+      "First Class": 7,
+      "Second Class": 43
+    },
+    "pareto_optimal": false
+  },
+  {
+    "carbon_penalty": 0.1,
+    "mean_profit": 143375.8566034247,
+    "std_profit": 15778.190958043753,
+    "mean_carbon": 982.0,
+    "std_carbon": 65.29899182478496,
+    "mean_sl": 0.99474882847204,
+    "n_runs": 10,
+    "shipping_modes": {
+      "Standard Class": 313,
+      "First Class": 7,
+      "Second Class": 43
+    },
+    "pareto_optimal": false
+  },
+  {
+    "carbon_penalty": 0.25,
+    "mean_profit": 143375.8566034247,
+    "std_profit": 15778.190958043753,
+    "mean_carbon": 982.0,
+    "std_carbon": 65.29899182478496,
+    "mean_sl": 0.99474882847204,
+    "n_runs": 10,
+    "shipping_modes": {
+      "Standard Class": 313,
+      "First Class": 7,
+      "Second Class": 43
+    },
+    "pareto_optimal": false
+  },
+  {
+    "carbon_penalty": 0.5,
+    "mean_profit": 143375.8566034247,
+    "std_profit": 15778.190958043753,
+    "mean_carbon": 982.0,
+    "std_carbon": 65.29899182478496,
+    "mean_sl": 0.99474882847204,
+    "n_runs": 10,
+    "shipping_modes": {
+      "Standard Class": 313,
+      "First Class": 7,
+      "Second Class": 43
+    },
+    "pareto_optimal": false
+  },
+  {
+    "carbon_penalty": 1.0,
+    "mean_profit": 143375.8566034247,
+    "std_profit": 15778.190958043753,
+    "mean_carbon": 982.0,
+    "std_carbon": 65.29899182478496,
+    "mean_sl": 0.99474882847204,
+    "n_runs": 10,
+    "shipping_modes": {
+      "Standard Class": 313,
+      "First Class": 7,
+      "Second Class": 43
+    },
+    "pareto_optimal": false
+  },
+  {
+    "carbon_penalty": 2.0,
+    "mean_profit": 144735.8566034247,
+    "std_profit": 15414.321030220883,
+    "mean_carbon": 880.0,
+    "std_carbon": 38.28348207778389,
+    "mean_sl": 0.99474882847204,
+    "n_runs": 10,
+    "shipping_modes": {
+      "Standard Class": 347,
+      "First Class": 7,
+      "Second Class": 9
+    },
+    "pareto_optimal": false
+  },
+  {
+    "carbon_penalty": 5.0,
+    "mean_profit": 144825.8566034247,
+    "std_profit": 15446.206305015266,
+    "mean_carbon": 873.25,
+    "std_carbon": 36.34900273735168,
+    "mean_sl": 0.99474882847204,
+    "n_runs": 10,
+    "shipping_modes": {
+      "Standard Class": 350,
+      "First Class": 7,
+      "Second Class": 6
+    },
+    "pareto_optimal": false
+  },
+  {
+    "carbon_penalty": 10.0,
+    "mean_profit": 144845.8566034247,
+    "std_profit": 15460.52557155059,
+    "mean_carbon": 871.75,
+    "std_carbon": 34.88672144718293,
+    "mean_sl": 0.99474882847204,
+    "n_runs": 10,
+    "shipping_modes": {
+      "Standard Class": 352,
+      "First Class": 7,
+      "Second Class": 4
+    },
+    "pareto_optimal": false
+  },
+  {
+    "carbon_penalty": 20.0,
+    "mean_profit": 144950.8566034247,
+    "std_profit": 15284.457334369858,
+    "mean_carbon": 864.75,
+    "std_carbon": 32.844329799829985,
+    "mean_sl": 0.99474882847204,
+    "n_runs": 10,
+    "shipping_modes": {
+      "Standard Class": 352,
+      "Second Class": 11
+    },
+    "pareto_optimal": true
+  }
+]

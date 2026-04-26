@@ -1,0 +1,37 @@
+{
+  "SKU_FIELD_SPORT": {
+    "Holt_MAE": 3.214,
+    "ARIMA_MAE": 3.29,
+    "improvement_pct": -2.38,
+    "winner": "Holt",
+    "note": "Holt preferred on Poisson demand (+2.4% lower MAE)"
+  },
+  "SKU_FITNESS": {
+    "Holt_MAE": 3.906,
+    "ARIMA_MAE": 3.943,
+    "improvement_pct": -0.95,
+    "winner": "Holt",
+    "note": "Holt preferred on Poisson demand (+1.0% lower MAE)"
+  },
+  "SKU_BICYCLE": {
+    "Holt_MAE": 2.288,
+    "ARIMA_MAE": 2.404,
+    "improvement_pct": -5.04,
+    "winner": "Holt",
+    "note": "Holt preferred on Poisson demand (+5.0% lower MAE)"
+  },
+  "SKU_WATCH": {
+    "Holt_MAE": 4.607,
+    "ARIMA_MAE": 4.731,
+    "improvement_pct": -2.69,
+    "winner": "Holt",
+    "note": "Holt preferred on Poisson demand (+2.7% lower MAE)"
+  },
+  "SKU_GOLF": {
+    "Holt_MAE": 2.875,
+    "ARIMA_MAE": 2.919,
+    "improvement_pct": -1.54,
+    "winner": "Holt",
+    "note": "Holt preferred on Poisson demand (+1.5% lower MAE)"
+  }
+}

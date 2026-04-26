@@ -1,0 +1,502 @@
+[
+  {
+    "decision_id": 0,
+    "day": 0,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 150.0,
+      "demand_forecast": 14.814004800017226,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=2846.01",
+    "q_values": [
+      2846.0084,
+      1474.1701,
+      783.0238,
+      940.2113,
+      800.8487,
+      609.8251,
+      405.0493,
+      191.1146
+    ],
+    "confidence": 1839.7269875000002
+  },
+  {
+    "decision_id": 1,
+    "day": 1,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 135.0,
+      "demand_forecast": 14.98930074366047,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=1436.59",
+    "q_values": [
+      1436.5926,
+      1045.889,
+      658.9239,
+      734.809,
+      576.9586,
+      240.079,
+      -23.8707,
+      -205.4558
+    ],
+    "confidence": 878.6018999999999
+  },
+  {
+    "decision_id": 2,
+    "day": 2,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 119.0,
+      "demand_forecast": 14.482328881900928,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=1436.59",
+    "q_values": [
+      1436.5926,
+      1045.889,
+      658.9239,
+      734.809,
+      576.9586,
+      240.079,
+      -23.8707,
+      -205.4558
+    ],
+    "confidence": 878.6018999999999
+  },
+  {
+    "decision_id": 3,
+    "day": 3,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 105.0,
+      "demand_forecast": 13.78297871221222,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=1436.59",
+    "q_values": [
+      1436.5926,
+      1045.889,
+      658.9239,
+      734.809,
+      576.9586,
+      240.079,
+      -23.8707,
+      -205.4558
+    ],
+    "confidence": 878.6018999999999
+  },
+  {
+    "decision_id": 4,
+    "day": 4,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 92.0,
+      "demand_forecast": 14.259944232063757,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 200,
+    "rationale": "Q-learning greedy: order=200, best_q=-428.28",
+    "q_values": [
+      -433.9244,
+      -437.5395,
+      -434.6911,
+      -433.3132,
+      -451.8438,
+      -441.0966,
+      -428.277,
+      -464.4172
+    ],
+    "confidence": 12.36084999999997
+  },
+  {
+    "decision_id": 5,
+    "day": 5,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 76.0,
+      "demand_forecast": 13.656021768997922,
+      "pending_qty": 200,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=-1194.12",
+    "q_values": [
+      -1194.1168,
+      -1217.2214,
+      -1205.4685,
+      -1198.9437,
+      -1228.5719,
+      -1205.7354,
+      -1237.6696,
+      -1204.11
+    ],
+    "confidence": 17.362862499999892
+  },
+  {
+    "decision_id": 6,
+    "day": 6,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 63.0,
+      "demand_forecast": 13.8735953917819,
+      "pending_qty": 200,
+      "disruption": false
+    },
+    "action": 250,
+    "rationale": "Q-learning greedy: order=250, best_q=-5320.98",
+    "q_values": [
+      -5346.491,
+      -5344.9696,
+      -5346.0104,
+      -5358.0206,
+      -5359.8667,
+      -5340.7572,
+      -5329.6988,
+      -5320.98
+    ],
+    "confidence": 22.36928750000061
+  },
+  {
+    "decision_id": 7,
+    "day": 7,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 48.0,
+      "demand_forecast": 13.069689065977226,
+      "pending_qty": 450,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=-13262.22",
+    "q_values": [
+      -13262.2164,
+      -13293.9369,
+      -13325.4126,
+      -13292.3427,
+      -13273.9602,
+      -13294.5897,
+      -13297.6827,
+      -13295.9292
+    ],
+    "confidence": 29.79240000000027
+  },
+  {
+    "decision_id": 8,
+    "day": 8,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 36.0,
+      "demand_forecast": 13.794863965934637,
+      "pending_qty": 450,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=-13262.22",
+    "q_values": [
+      -13262.2164,
+      -13293.9369,
+      -13325.4126,
+      -13292.3427,
+      -13273.9602,
+      -13294.5897,
+      -13297.6827,
+      -13295.9292
+    ],
+    "confidence": 29.79240000000027
+  },
+  {
+    "decision_id": 9,
+    "day": 9,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 220.0,
+      "demand_forecast": 13.378640476926787,
+      "pending_qty": 250,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=4786.87",
+    "q_values": [
+      4786.8697,
+      1222.2118,
+      1126.3272,
+      1081.8197,
+      1196.3449,
+      1261.5338,
+      563.9584,
+      263.8913
+    ],
+    "confidence": 3349.0001
+  },
+  {
+    "decision_id": 10,
+    "day": 10,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 457.0,
+      "demand_forecast": 13.735924820313487,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=8085.35",
+    "q_values": [
+      8085.35,
+      7671.2658,
+      6927.0609,
+      6774.5648,
+      6951.2736,
+      6550.4962,
+      5851.149,
+      5532.2984
+    ],
+    "confidence": 1292.4176625
+  },
+  {
+    "decision_id": 11,
+    "day": 11,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 442.0,
+      "demand_forecast": 14.023946116074772,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=8085.35",
+    "q_values": [
+      8085.35,
+      7671.2658,
+      6927.0609,
+      6774.5648,
+      6951.2736,
+      6550.4962,
+      5851.149,
+      5532.2984
+    ],
+    "confidence": 1292.4176625
+  },
+  {
+    "decision_id": 12,
+    "day": 12,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 427.0,
+      "demand_forecast": 14.254842639625428,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=8085.35",
+    "q_values": [
+      8085.35,
+      7671.2658,
+      6927.0609,
+      6774.5648,
+      6951.2736,
+      6550.4962,
+      5851.149,
+      5532.2984
+    ],
+    "confidence": 1292.4176625
+  },
+  {
+    "decision_id": 13,
+    "day": 13,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 412.0,
+      "demand_forecast": 15.758824926922127,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=8085.35",
+    "q_values": [
+      8085.35,
+      7671.2658,
+      6927.0609,
+      6774.5648,
+      6951.2736,
+      6550.4962,
+      5851.149,
+      5532.2984
+    ],
+    "confidence": 1292.4176625
+  },
+  {
+    "decision_id": 14,
+    "day": 14,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 393.0,
+      "demand_forecast": 16.24884778022215,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=8085.35",
+    "q_values": [
+      8085.35,
+      7671.2658,
+      6927.0609,
+      6774.5648,
+      6951.2736,
+      6550.4962,
+      5851.149,
+      5532.2984
+    ],
+    "confidence": 1292.4176625
+  },
+  {
+    "decision_id": 15,
+    "day": 15,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 376.0,
+      "demand_forecast": 16.2843983441255,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=8085.35",
+    "q_values": [
+      8085.35,
+      7671.2658,
+      6927.0609,
+      6774.5648,
+      6951.2736,
+      6550.4962,
+      5851.149,
+      5532.2984
+    ],
+    "confidence": 1292.4176625
+  },
+  {
+    "decision_id": 16,
+    "day": 16,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 360.0,
+      "demand_forecast": 17.620751788534083,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=8085.35",
+    "q_values": [
+      8085.35,
+      7671.2658,
+      6927.0609,
+      6774.5648,
+      6951.2736,
+      6550.4962,
+      5851.149,
+      5532.2984
+    ],
+    "confidence": 1292.4176625
+  },
+  {
+    "decision_id": 17,
+    "day": 17,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 340.0,
+      "demand_forecast": 14.997576645964067,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=8085.35",
+    "q_values": [
+      8085.35,
+      7671.2658,
+      6927.0609,
+      6774.5648,
+      6951.2736,
+      6550.4962,
+      5851.149,
+      5532.2984
+    ],
+    "confidence": 1292.4176625
+  },
+  {
+    "decision_id": 18,
+    "day": 18,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 331.0,
+      "demand_forecast": 13.641426746786133,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=8085.35",
+    "q_values": [
+      8085.35,
+      7671.2658,
+      6927.0609,
+      6774.5648,
+      6951.2736,
+      6550.4962,
+      5851.149,
+      5532.2984
+    ],
+    "confidence": 1292.4176625
+  },
+  {
+    "decision_id": 19,
+    "day": 19,
+    "agent": "Q-Learning RL Agent",
+    "type": "inventory_replenishment",
+    "inputs": {
+      "inventory": 320.0,
+      "demand_forecast": 13.272879014957997,
+      "pending_qty": 0,
+      "disruption": false
+    },
+    "action": 0,
+    "rationale": "Q-learning greedy: order=0, best_q=8085.35",
+    "q_values": [
+      8085.35,
+      7671.2658,
+      6927.0609,
+      6774.5648,
+      6951.2736,
+      6550.4962,
+      5851.149,
+      5532.2984
+    ],
+    "confidence": 1292.4176625
+  }
+]
