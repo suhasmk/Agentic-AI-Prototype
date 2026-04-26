@@ -1,4 +1,4 @@
-# EG7302 — Agentic AI for Autonomous Inventory Management
+# Agentic AI for Autonomous Inventory Management
 
 > **Design, Development and Evaluation of an Agentic AI Prototype for Autonomous Decision-Making in Manufacturing and Logistics under Stochastic Uncertainty**
 
