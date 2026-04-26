@@ -1,7 +1,6 @@
 """
 run_fast_comparison.py
-Place in EG7302_FINAL/source_code/ and run:
-    python run_fast_comparison.py
+python run_fast_comparison.py
 
 Uses all four speed optimisations:
   1. Decision caching  — 75-85% fewer LLM calls
