@@ -515,52 +515,11 @@ def run_prototype():
             with open(_results_json) as _f:
                 fig_results = _json.load(_f)
         generate_all_figures(fig_results)
-        ok(f'10 dissertation figures saved to {FIGURES_DIR}/')
+        ok(f'10 figures saved to {FIGURES_DIR}/')
     except Exception as _e:
         print(f'  WARNING: Figure generation failed: {_e}')
         print('  Run: python visualisation.py  to generate figures manually.')
 
-    separator('TECHNICAL LIMITATIONS & DEPLOYMENT ROADMAP')
-
-    limitations = {
-        'scalability': [
-            'Q-table grows exponentially with state dimensions (curse of dimensionality)',
-            'Current state space: ~768 states x 8 actions = 6,144 Q-values (manageable)',
-            'Deep Q-Networks (DQN) required for high-dimensional/continuous state spaces',
-            'Multi-product extension requires per-SKU Q-tables or function approximation',
-        ],
-        'technical_limitations': [
-            'Tabular Q-learning assumes discrete, finite state/action spaces',
-            'Simulation uses synthetic stochastic processes; real demand may have seasonality',
-            'Lead times modelled as Gaussian; real distributions may be heavy-tailed',
-            'Single-echelon inventory model; multi-echelon requires multi-agent RL',
-            'Production scheduling uses greedy heuristics, not exact optimisation',
-            'Low-volume SKUs (lambda < 10, e.g. SKU_BICYCLE): Q-table discretisation '
-            'may be too coarse; DQN or finer state granularity recommended.',
-        ],
-        'engineering_management': [
-            'Change management: staff require retraining for autonomous decision acceptance',
-            'Regulatory compliance: explainability requirements (EU AI Act)',
-            'Integration: API/ERP middleware required for production deployment',
-            'Model drift: Q-table requires periodic retraining as market conditions evolve',
-            'Trust calibration: hybrid human-AI oversight recommended for initial deployment',
-        ],
-        'deployment_recommendations': [
-            'Phase 1: Shadow mode (AI decides, humans review) for 3-6 months',
-            'Phase 2: Assisted mode (AI recommends, humans approve) for 3-6 months',
-            'Phase 3: Full autonomy with anomaly-triggered human escalation',
-            'Continuous monitoring of KPI drift and policy stability',
-        ],
-    }
-
-    for section, points in limitations.items():
-        print(f'\n  [{section.upper().replace("_", " ")}]')
-        for p in points:
-            print(f'    * {p}')
-
-    results['objective_8'] = limitations
-    print()
-    ok('Technical limitations and deployment roadmap documented')
 
     # ── Extended analysis ────────────────────────────────────────────────────
     separator('EXTENDED ANALYSIS: FORECASTING, PORTFOLIO & CARBON FRONTIER')
